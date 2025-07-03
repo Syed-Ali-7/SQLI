@@ -4,6 +4,6 @@ python -m venv myenv
 To activate the virtual environment, use the following command:
 myenv\Scripts\activate  
 
-Install the required packages using pip:
+Install the required packages using pip in myenv:
 pip install flask
 pip install flask_limiter
