@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #6a5af9;
+  --primary-color-dark: #5a4fcf;
+  --white-color: #ffffff;
+  --light-gray-color: #e0e0e0;
+  --gray-color: #868686;
+  --dark-gray-color: #333333;
+  --error-color: #e74c3c;
+  --success-color: #2ecc71;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--dark-gray-color);
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.main-title {
+  font-size: 1.5rem;
+  color: var(--black-color);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2.5rem;
+  letter-spacing: 1.5px; /* Slightly reduced letter spacing */
+  white-space: nowrap; /* Ensure it stays on one line */
+  overflow: hidden; /* Hide overflow if it's still too long */
+  text-overflow: ellipsis; /* Add ellipsis if content is clipped */
+  font-weight: 700;
+  animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 450px; /* Slightly wider container */
+  padding: 0 1.5rem;
+}
+
+.form-container,
+.profile-container {
+  background-color: var(--white-color);
+  padding: 3.5rem 3rem; /* More padding */
+  border-radius: 20px; /* More rounded corners */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: var(--primary-color);
+}
+
+.form-container p {
+  margin-bottom: 2.5rem;
+  color: var(--gray-color);
+  font-size: 1.05rem;
+}
+
+.input-group {
+  margin-bottom: 1.8rem;
+  text-align: left;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--dark-gray-color);
+}
+
+.input-group input {
+  width: calc(100% - 2.5rem); /* Account for toggle icon */
+  padding: 0.9rem 1.2rem;
+  border: 2px solid var(--light-gray-color);
+  border-radius: 10px;
+  font-size: 1.05rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(106, 90, 249, 0.2);
+}
+
+.password-group {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 65%; /* Adjust vertical alignment */
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--gray-color);
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.password-toggle:hover {
+  color: var(--primary-color);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(106, 90, 249, 0.3);
+}
+
+button:hover {
+  background-color: var(--primary-color-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(106, 90, 249, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(106, 90, 249, 0.2);
+}
+
+#error-message {
+  color: var(--error-color);
+  text-align: center;
+  margin-top: 1.8rem;
+  font-weight: 600;
+  min-height: 20px;
+  font-size: 0.95rem;
+}
+
+.profile-info {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.profile-info p {
+  margin-bottom: 1.4rem;
+  font-size: 1.15rem;
+  color: var(--dark-gray-color);
+  display: flex;
+  align-items: center;
+}
+
+.profile-info p strong {
+  color: var(--primary-color);
+  margin-right: 12px;
+  min-width: 90px; /* Align labels */
+}
+
+#logout-btn {
+  margin-top: 2.5rem;
+  background-color: #e74c3c; /* Red for logout */
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+#logout-btn:hover {
+  background-color: #c0392b;
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+}

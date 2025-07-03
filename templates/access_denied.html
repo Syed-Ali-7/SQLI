@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .denied-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .denied-message {
+            background-color: var(--white-color);
+            padding: 3.5rem 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+        .denied-message h2 {
+            color: #e74c3c;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .denied-message p {
+            font-size: 1.1rem;
+            color: var(--dark-gray-color);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="denied-container">
+        <div class="denied-message">
+            <h2>🚫 Access Denied</h2>
+            <p>Your request was blocked due to suspicious activity or too many failed attempts.</p>
+        </div>
+    </div>
+</body>
+</html>
