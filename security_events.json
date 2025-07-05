@@ -1,0 +1,118 @@
+{"timestamp": "2025-07-01T20:31:02.596331", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-01T20:31:04.641025", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-01T20:31:06.567967", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-01T20:31:07.586993", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-01T20:31:07.758520", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-01T20:35:38.792105", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-01T20:35:46.637878", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-01T20:40:57.559884", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-01T20:45:15.663025", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-01T20:45:22.082817", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-01T20:45:45.804134", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-01T20:47:29.873542", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-01T20:49:38.002383", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-01T20:51:42.247490", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: sihdisa"}
+{"timestamp": "2025-07-01T20:53:17.352594", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: or 1 =''"}
+{"timestamp": "2025-07-01T20:53:20.016673", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: or 1 =''"}
+{"timestamp": "2025-07-01T20:55:10.448597", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=1 AND (SELECT * FROM Users) = 1\t"}
+{"timestamp": "2025-07-01T20:59:29.658077", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' OR 1=1 --"}
+{"timestamp": "2025-07-01T21:35:24.301502", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' OR 1=1 --"}
+{"timestamp": "2025-07-01T21:38:18.834164", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-01T21:38:23.364436", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-01T21:38:32.539797", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' OR 1=1 --"}
+{"timestamp": "2025-07-02T20:02:03.336868", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:02:07.477704", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:02:21.674810", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T20:04:20.879779", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:04:26.480898", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:17:20.940288", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:17:26.790686", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:35:47.355696", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' OR 1=1 --"}
+{"timestamp": "2025-07-02T20:40:30.055601", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T20:40:30.754801", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T20:40:31.573154", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T20:40:32.293592", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T20:40:33.055298", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T20:45:31.392546", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:46:14.314182", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T20:49:44.121844", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:49:55.175348", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T20:50:25.386787", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' OR 1=1 --"}
+{"timestamp": "2025-07-02T20:55:48.804454", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:56:08.773215", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T20:56:39.340653", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=')) or benchmark(10000000,MD5(1))#"}
+{"timestamp": "2025-07-02T20:59:47.539290", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T20:59:53.754607", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:00:03.418104", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:00:11.772104", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=')) or benchmark(10000000,MD5(1))#"}
+{"timestamp": "2025-07-02T21:03:04.594321", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-02T21:03:11.394945", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:11:51.512509", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:21:39.845877", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:22:41.705547", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:24:52.424426", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:24:58.622850", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username"}
+{"timestamp": "2025-07-02T21:28:11.064095", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:28:29.461625", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:32:19.602722", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:32:34.030101", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:32:47.691186", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username"}
+{"timestamp": "2025-07-02T21:35:07.237985", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: abc"}
+{"timestamp": "2025-07-02T21:35:12.594444", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: abc"}
+{"timestamp": "2025-07-02T21:35:16.872053", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: abc"}
+{"timestamp": "2025-07-02T21:35:20.590417", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: abc"}
+{"timestamp": "2025-07-02T21:35:25.647618", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: abc"}
+{"timestamp": "2025-07-02T21:39:35.965854", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:39:42.977388", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:40:11.151904", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:40:26.813632", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:40:45.747458", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username"}
+{"timestamp": "2025-07-02T21:43:11.406310", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:43:18.702106", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:44:38.768693", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:44:55.046084", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-02T21:45:07.522707", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username"}
+{"timestamp": "2025-07-03T22:06:02.006962", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-03T22:06:53.505319", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-03T22:07:01.494417", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username"}
+{"timestamp": "2025-07-03T22:08:09.645861", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:08:14.031263", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:08:16.915565", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:08:19.230728", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:08:21.817748", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:33:15.862369", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-03T22:33:18.867140", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-03T22:33:19.649001", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-03T22:33:19.900893", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-03T22:33:20.103170", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-03T22:33:21.117484", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-03T22:35:08.777908", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:35:11.268586", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:35:12.035360", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:35:12.493910", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:35:12.759562", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:37:12.668103", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:37:16.488895", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:37:28.665533", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:37:31.675064", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:37:32.646220", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:38:53.165492", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "Too many login attempts"}
+{"timestamp": "2025-07-03T22:46:03.879659", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:46:13.535976", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:46:45.055273", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: john_doe"}
+{"timestamp": "2025-07-03T22:47:13.080667", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: john_doe"}
+{"timestamp": "2025-07-03T22:47:16.606623", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: john_doe"}
+{"timestamp": "2025-07-03T22:51:38.978782", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-03T22:51:58.852337", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-03T22:52:01.269266", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-05T20:58:25.896168", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-05T20:59:20.431769", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-05T22:13:01.541570", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username"}
+{"timestamp": "2025-07-05T22:15:17.881047", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-05T22:17:06.250076", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-05T22:39:39.588430", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-05T22:39:50.825514", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-05T22:40:03.513010", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-05T23:03:31.320543", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username"}
+{"timestamp": "2025-07-05T23:13:47.466483", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-05T23:14:14.555057", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}

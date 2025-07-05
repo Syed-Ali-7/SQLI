@@ -1,0 +1,1592 @@
+2025-07-01 19:32:34,432 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-01 19:32:34,432 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 19:32:34,435 - INFO -  * Restarting with stat
+2025-07-01 19:32:35,079 - WARNING -  * Debugger is active!
+2025-07-01 19:32:35,084 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 19:52:55,238 - INFO - 127.0.0.1 - - [01/Jul/2025 19:52:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:52:55,366 - INFO - 127.0.0.1 - - [01/Jul/2025 19:52:55] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:52:55,390 - INFO - 127.0.0.1 - - [01/Jul/2025 19:52:55] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:52:55,489 - INFO - 127.0.0.1 - - [01/Jul/2025 19:52:55] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1" 200 -
+2025-07-01 19:52:55,508 - INFO - 127.0.0.1 - - [01/Jul/2025 19:52:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 19:53:18,951 - INFO -  * To enable the debugger you need to enter the security pin:
+2025-07-01 19:53:18,951 - INFO -  * Debugger pin code: 148-639-104
+2025-07-01 19:53:18,951 - INFO - 127.0.0.1 - - [01/Jul/2025 19:53:18] "GET /?__debugger__=yes&cmd=printpin&s=N03WJqn82xNf7i5zFTBw HTTP/1.1" 200 -
+2025-07-01 19:53:28,913 - INFO - 127.0.0.1 - - [01/Jul/2025 19:53:28] "GET /?__debugger__=yes&cmd=pinauth&pin=ali7&s=N03WJqn82xNf7i5zFTBw HTTP/1.1" 200 -
+2025-07-01 19:53:50,189 - INFO - 127.0.0.1 - - [01/Jul/2025 19:53:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:53:50,236 - INFO - 127.0.0.1 - - [01/Jul/2025 19:53:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:53:50,237 - INFO - 127.0.0.1 - - [01/Jul/2025 19:53:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:53:50,283 - INFO - 127.0.0.1 - - [01/Jul/2025 19:53:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:56:55,658 - INFO - 127.0.0.1 - - [01/Jul/2025 19:56:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:56:55,674 - INFO - 127.0.0.1 - - [01/Jul/2025 19:56:55] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:56:55,675 - INFO - 127.0.0.1 - - [01/Jul/2025 19:56:55] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:56:55,686 - INFO - 127.0.0.1 - - [01/Jul/2025 19:56:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:57:01,976 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:57:01,996 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:57:01,997 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,013 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,023 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,120 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:57:02,133 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,133 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,146 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,155 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,283 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:57:02,297 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,298 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,305 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,317 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,516 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:57:02,532 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,533 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,543 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:57:02,550 - INFO - 127.0.0.1 - - [01/Jul/2025 19:57:02] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 19:59:14,619 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:59:14,652 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:59:14,688 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:59:14,733 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:59:18,745 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:59:18,758 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:59:18,762 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:59:18,772 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:59:18,781 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 19:59:18,902 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:59:18,917 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:59:18,917 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:59:18,924 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:59:18,935 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:18] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 19:59:19,054 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:59:19,070 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:59:19,071 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:59:19,090 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:59:19,102 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 19:59:19,286 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 19:59:19,300 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 19:59:19,302 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 19:59:19,318 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 19:59:19,335 - INFO - 127.0.0.1 - - [01/Jul/2025 19:59:19] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 20:00:38,942 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 20:00:38,957 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:00:38,958 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 20:00:38,964 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 20:00:38,982 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 20:00:39,805 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 20:00:39,822 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:39] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 20:00:39,823 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:39] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:00:39,835 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:39] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 20:00:39,847 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:39] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 20:00:39,981 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 20:00:39,996 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:39] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:00:39,997 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:39] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 20:00:40,009 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 20:00:40,020 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 20:00:40,220 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 20:00:40,236 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:40] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:00:40,237 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:40] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 20:00:40,255 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 20:00:40,268 - INFO - 127.0.0.1 - - [01/Jul/2025 20:00:40] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-01 20:01:00,342 - INFO - 127.0.0.1 - - [01/Jul/2025 20:01:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 20:01:00,358 - INFO - 127.0.0.1 - - [01/Jul/2025 20:01:00] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 20:01:00,358 - INFO - 127.0.0.1 - - [01/Jul/2025 20:01:00] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:01:00,441 - INFO - 127.0.0.1 - - [01/Jul/2025 20:01:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 20:04:18,458 - INFO - 127.0.0.1 - - [01/Jul/2025 20:04:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 20:04:18,481 - INFO - 127.0.0.1 - - [01/Jul/2025 20:04:18] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:04:18,481 - INFO - 127.0.0.1 - - [01/Jul/2025 20:04:18] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 20:04:18,615 - INFO - 127.0.0.1 - - [01/Jul/2025 20:04:18] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 20:14:52,002 - INFO - 127.0.0.1 - - [01/Jul/2025 20:14:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-01 20:14:52,057 - INFO - 127.0.0.1 - - [01/Jul/2025 20:14:52] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:14:52,120 - INFO - 127.0.0.1 - - [01/Jul/2025 20:14:52] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-01 20:14:52,311 - INFO - 127.0.0.1 - - [01/Jul/2025 20:14:52] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=N03WJqn82xNf7i5zFTBw HTTP/1.1[0m" 304 -
+2025-07-01 20:30:43,716 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-01 20:30:43,717 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 20:30:43,720 - INFO -  * Restarting with stat
+2025-07-01 20:30:44,568 - WARNING -  * Debugger is active!
+2025-07-01 20:30:44,575 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:30:50,453 - INFO - 127.0.0.1 - - [01/Jul/2025 20:30:50] "GET / HTTP/1.1" 200 -
+2025-07-01 20:30:50,609 - INFO - 127.0.0.1 - - [01/Jul/2025 20:30:50] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-01 20:30:50,610 - INFO - 127.0.0.1 - - [01/Jul/2025 20:30:50] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-01 20:31:02,598 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-01 20:31:02,599 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:02] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-01 20:31:04,642 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-01 20:31:04,644 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:04] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-01 20:31:06,569 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-01 20:31:06,570 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:06] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-01 20:31:07,515 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:07,517 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:07] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:07,588 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-01 20:31:07,589 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:07] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-01 20:31:07,759 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-01 20:31:07,761 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:07] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-01 20:31:08,563 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:08,564 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:08] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:09,837 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:09,839 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:09] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:10,053 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:10,055 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:10] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:10,277 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:10,279 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:10] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:11,969 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:11,970 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:11] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:55,520 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:55,521 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:55] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:57,320 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:57,321 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:57] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:58,107 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:58,108 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:58] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:58,299 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:58,301 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:58] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:58,490 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:58,491 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:58] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:31:58,718 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-01 20:31:58,719 - INFO - 127.0.0.1 - - [01/Jul/2025 20:31:58] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-01 20:35:21,548 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-01 20:35:21,549 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 20:35:21,551 - INFO -  * Restarting with stat
+2025-07-01 20:35:22,193 - WARNING -  * Debugger is active!
+2025-07-01 20:35:22,201 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:35:27,453 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:27] "GET / HTTP/1.1" 200 -
+2025-07-01 20:35:27,603 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:27] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:35:27,620 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:27] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-01 20:35:38,793 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-01 20:35:38,797 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:38] "POST /login HTTP/1.1" 200 -
+2025-07-01 20:35:38,837 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:38] "GET /profile HTTP/1.1" 200 -
+2025-07-01 20:35:38,871 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:35:38,873 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:38] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:35:38,888 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:38] "GET /profile HTTP/1.1" 200 -
+2025-07-01 20:35:46,639 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-01 20:35:46,640 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:46] "POST /logout HTTP/1.1" 200 -
+2025-07-01 20:35:46,664 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:46] "GET / HTTP/1.1" 200 -
+2025-07-01 20:35:46,691 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:35:46,700 - INFO - 127.0.0.1 - - [01/Jul/2025 20:35:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:40:18,923 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-01 20:40:18,924 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 20:40:18,926 - INFO -  * Restarting with stat
+2025-07-01 20:40:19,676 - WARNING -  * Debugger is active!
+2025-07-01 20:40:19,680 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:40:24,019 - INFO - 127.0.0.1 - - [01/Jul/2025 20:40:24] "GET / HTTP/1.1" 200 -
+2025-07-01 20:40:24,141 - INFO - 127.0.0.1 - - [01/Jul/2025 20:40:24] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-01 20:40:24,188 - INFO - 127.0.0.1 - - [01/Jul/2025 20:40:24] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-01 20:40:57,561 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-01 20:40:57,563 - INFO - 127.0.0.1 - - [01/Jul/2025 20:40:57] "POST /login HTTP/1.1" 200 -
+2025-07-01 20:40:57,587 - INFO - 127.0.0.1 - - [01/Jul/2025 20:40:57] "GET /profile HTTP/1.1" 200 -
+2025-07-01 20:42:58,104 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 20:42:58,239 - INFO -  * Restarting with stat
+2025-07-01 20:42:58,927 - WARNING -  * Debugger is active!
+2025-07-01 20:42:58,932 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:44:22,848 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 20:44:22,938 - INFO -  * Restarting with stat
+2025-07-01 20:44:23,725 - WARNING -  * Debugger is active!
+2025-07-01 20:44:23,731 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:44:29,317 - INFO - 127.0.0.1 - - [01/Jul/2025 20:44:29] "GET / HTTP/1.1" 200 -
+2025-07-01 20:44:29,392 - INFO - 127.0.0.1 - - [01/Jul/2025 20:44:29] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-01 20:44:29,393 - INFO - 127.0.0.1 - - [01/Jul/2025 20:44:29] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-01 20:44:42,288 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-01 20:44:42,289 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 20:44:42,290 - INFO -  * Restarting with stat
+2025-07-01 20:44:42,947 - WARNING -  * Debugger is active!
+2025-07-01 20:44:42,951 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:44:46,910 - INFO - 127.0.0.1 - - [01/Jul/2025 20:44:46] "GET / HTTP/1.1" 200 -
+2025-07-01 20:44:47,005 - INFO - 127.0.0.1 - - [01/Jul/2025 20:44:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:44:47,006 - INFO - 127.0.0.1 - - [01/Jul/2025 20:44:47] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-01 20:45:15,664 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-01 20:45:15,667 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:15] "POST /login HTTP/1.1" 200 -
+2025-07-01 20:45:15,692 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:15] "GET /profile HTTP/1.1" 200 -
+2025-07-01 20:45:15,719 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:45:15,721 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:15] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:45:22,084 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-01 20:45:22,085 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:22] "POST /logout HTTP/1.1" 200 -
+2025-07-01 20:45:22,100 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:22] "GET / HTTP/1.1" 200 -
+2025-07-01 20:45:22,124 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:45:22,132 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:22] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:45:27,441 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:27] "GET / HTTP/1.1" 200 -
+2025-07-01 20:45:27,460 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:45:27,461 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:27] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:45:45,805 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-01 20:45:45,807 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:45] "POST /login HTTP/1.1" 200 -
+2025-07-01 20:45:45,832 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:45] "GET /profile HTTP/1.1" 200 -
+2025-07-01 20:45:45,861 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:45:45,863 - INFO - 127.0.0.1 - - [01/Jul/2025 20:45:45] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:46:58,285 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 20:46:58,341 - INFO -  * Restarting with stat
+2025-07-01 20:46:59,023 - WARNING -  * Debugger is active!
+2025-07-01 20:46:59,031 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:47:05,757 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:05] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-01 20:47:06,848 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:06] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-01 20:47:08,935 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:08] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-01 20:47:13,061 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:13] "GET / HTTP/1.1" 200 -
+2025-07-01 20:47:13,213 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:13] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:47:13,224 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:13] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-01 20:47:29,874 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-01 20:47:29,876 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:29] "POST /login HTTP/1.1" 200 -
+2025-07-01 20:47:29,900 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:29] "GET /profile HTTP/1.1" 200 -
+2025-07-01 20:47:29,924 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:47:29,926 - INFO - 127.0.0.1 - - [01/Jul/2025 20:47:29] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:49:38,003 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-01 20:49:38,005 - INFO - 127.0.0.1 - - [01/Jul/2025 20:49:38] "POST /logout HTTP/1.1" 200 -
+2025-07-01 20:49:38,028 - INFO - 127.0.0.1 - - [01/Jul/2025 20:49:38] "GET / HTTP/1.1" 200 -
+2025-07-01 20:49:38,053 - INFO - 127.0.0.1 - - [01/Jul/2025 20:49:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:49:38,057 - INFO - 127.0.0.1 - - [01/Jul/2025 20:49:38] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:50:18,657 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 20:50:18,760 - INFO -  * Restarting with stat
+2025-07-01 20:50:19,591 - WARNING -  * Debugger is active!
+2025-07-01 20:50:19,596 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:50:21,912 - INFO - 127.0.0.1 - - [01/Jul/2025 20:50:21] "GET / HTTP/1.1" 200 -
+2025-07-01 20:50:21,990 - INFO - 127.0.0.1 - - [01/Jul/2025 20:50:21] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:50:22,005 - INFO - 127.0.0.1 - - [01/Jul/2025 20:50:22] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-01 20:51:08,974 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 20:51:09,046 - INFO -  * Restarting with stat
+2025-07-01 20:51:09,791 - WARNING -  * Debugger is active!
+2025-07-01 20:51:09,801 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:51:12,318 - INFO - 127.0.0.1 - - [01/Jul/2025 20:51:12] "GET / HTTP/1.1" 200 -
+2025-07-01 20:51:12,433 - INFO - 127.0.0.1 - - [01/Jul/2025 20:51:12] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-01 20:51:12,435 - INFO - 127.0.0.1 - - [01/Jul/2025 20:51:12] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:51:26,602 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 20:51:26,672 - INFO -  * Restarting with stat
+2025-07-01 20:51:27,328 - WARNING -  * Debugger is active!
+2025-07-01 20:51:27,333 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:51:28,916 - INFO - 127.0.0.1 - - [01/Jul/2025 20:51:28] "GET / HTTP/1.1" 200 -
+2025-07-01 20:51:28,989 - INFO - 127.0.0.1 - - [01/Jul/2025 20:51:28] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:51:28,991 - INFO - 127.0.0.1 - - [01/Jul/2025 20:51:28] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-01 20:51:42,248 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Username not found: sihdisa
+2025-07-01 20:51:42,249 - INFO - 127.0.0.1 - - [01/Jul/2025 20:51:42] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-01 20:53:17,353 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Username not found: or 1 =''
+2025-07-01 20:53:17,354 - INFO - 127.0.0.1 - - [01/Jul/2025 20:53:17] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-01 20:53:20,017 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Username not found: or 1 =''
+2025-07-01 20:53:20,018 - INFO - 127.0.0.1 - - [01/Jul/2025 20:53:20] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-01 20:55:10,449 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=1 AND (SELECT * FROM Users) = 1	
+2025-07-01 20:55:10,452 - INFO - 127.0.0.1 - - [01/Jul/2025 20:55:10] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-01 20:55:12,481 - INFO - 127.0.0.1 - - [01/Jul/2025 20:55:12] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-01 20:57:51,992 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 20:57:52,116 - INFO -  * Restarting with stat
+2025-07-01 20:57:52,818 - WARNING -  * Debugger is active!
+2025-07-01 20:57:52,825 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:58:14,085 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 20:58:14,163 - INFO -  * Restarting with stat
+2025-07-01 20:58:14,828 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-01 20:58:14,893 - WARNING -  * Debugger is active!
+2025-07-01 20:58:14,899 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 20:58:18,807 - INFO - 127.0.0.1 - - [01/Jul/2025 20:58:18] "GET / HTTP/1.1" 200 -
+2025-07-01 20:58:18,882 - INFO - 127.0.0.1 - - [01/Jul/2025 20:58:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:58:18,889 - INFO - 127.0.0.1 - - [01/Jul/2025 20:58:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:58:19,900 - INFO - 127.0.0.1 - - [01/Jul/2025 20:58:19] "GET / HTTP/1.1" 200 -
+2025-07-01 20:58:19,925 - INFO - 127.0.0.1 - - [01/Jul/2025 20:58:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 20:58:19,925 - INFO - 127.0.0.1 - - [01/Jul/2025 20:58:19] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 20:59:29,659 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' OR 1=1 --
+2025-07-01 20:59:29,660 - INFO - 127.0.0.1 - - [01/Jul/2025 20:59:29] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-01 20:59:31,981 - INFO - 127.0.0.1 - - [01/Jul/2025 20:59:31] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-01 20:59:32,970 - INFO - 127.0.0.1 - - [01/Jul/2025 20:59:32] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-01 20:59:33,447 - INFO - 127.0.0.1 - - [01/Jul/2025 20:59:33] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-01 20:59:33,615 - INFO - 127.0.0.1 - - [01/Jul/2025 20:59:33] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-01 20:59:33,842 - INFO - 127.0.0.1 - - [01/Jul/2025 20:59:33] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-01 20:59:36,037 - INFO - 127.0.0.1 - - [01/Jul/2025 20:59:36] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-01 21:33:57,090 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 21:33:57,350 - INFO -  * Restarting with stat
+2025-07-01 21:34:00,861 - WARNING -  * Debugger is active!
+2025-07-01 21:34:00,872 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 21:34:11,434 - INFO - 127.0.0.1 - - [01/Jul/2025 21:34:11] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-01 21:34:29,673 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 21:34:29,782 - INFO -  * Restarting with stat
+2025-07-01 21:34:30,518 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-01 21:34:30,567 - WARNING -  * Debugger is active!
+2025-07-01 21:34:30,573 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 21:35:09,452 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-01 21:35:09,531 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-01 21:35:09,532 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-01 21:35:09,534 - INFO -  * Restarting with stat
+2025-07-01 21:35:10,159 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-01 21:35:10,219 - WARNING -  * Debugger is active!
+2025-07-01 21:35:10,225 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 21:35:14,300 - INFO - 127.0.0.1 - - [01/Jul/2025 21:35:14] "GET / HTTP/1.1" 200 -
+2025-07-01 21:35:14,418 - INFO - 127.0.0.1 - - [01/Jul/2025 21:35:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 21:35:14,461 - INFO - 127.0.0.1 - - [01/Jul/2025 21:35:14] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-01 21:35:24,302 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' OR 1=1 --
+2025-07-01 21:35:24,304 - INFO - 127.0.0.1 - - [01/Jul/2025 21:35:24] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-01 21:35:27,571 - INFO - 127.0.0.1 - - [01/Jul/2025 21:35:27] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-01 21:35:58,837 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 21:35:58,920 - INFO -  * Restarting with stat
+2025-07-01 21:35:59,696 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-01 21:35:59,749 - WARNING -  * Debugger is active!
+2025-07-01 21:35:59,754 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 21:36:04,340 - INFO - 127.0.0.1 - - [01/Jul/2025 21:36:04] "GET / HTTP/1.1" 200 -
+2025-07-01 21:36:04,417 - INFO - 127.0.0.1 - - [01/Jul/2025 21:36:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 21:36:04,420 - INFO - 127.0.0.1 - - [01/Jul/2025 21:36:04] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 21:37:12,108 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 21:37:12,201 - INFO -  * Restarting with stat
+2025-07-01 21:37:12,919 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-01 21:37:12,970 - WARNING -  * Debugger is active!
+2025-07-01 21:37:12,983 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 21:37:41,267 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-01 21:37:41,397 - INFO -  * Restarting with stat
+2025-07-01 21:37:42,152 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-01 21:37:42,215 - WARNING -  * Debugger is active!
+2025-07-01 21:37:42,222 - INFO -  * Debugger PIN: 148-639-104
+2025-07-01 21:37:46,115 - INFO - 127.0.0.1 - - [01/Jul/2025 21:37:46] "GET / HTTP/1.1" 200 -
+2025-07-01 21:37:46,206 - INFO - 127.0.0.1 - - [01/Jul/2025 21:37:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 21:37:46,285 - INFO - 127.0.0.1 - - [01/Jul/2025 21:37:46] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-01 21:38:18,835 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-01 21:38:18,838 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:18] "POST /login HTTP/1.1" 200 -
+2025-07-01 21:38:18,933 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:18] "GET /profile HTTP/1.1" 200 -
+2025-07-01 21:38:18,959 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 21:38:18,965 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 21:38:23,366 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-01 21:38:23,367 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:23] "POST /logout HTTP/1.1" 200 -
+2025-07-01 21:38:23,386 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:23] "GET / HTTP/1.1" 200 -
+2025-07-01 21:38:23,410 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-01 21:38:23,415 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:23] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-01 21:38:32,541 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' OR 1=1 --
+2025-07-01 21:38:32,542 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-01 21:38:32,554 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:32] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-01 21:38:32,572 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:32] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-01 21:38:42,853 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:42] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-01 21:38:43,013 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:43] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-01 21:38:43,235 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:43] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-01 21:38:49,022 - INFO - 127.0.0.1 - - [01/Jul/2025 21:38:49] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-02 20:01:10,840 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:01:11,004 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 20:01:11,004 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 20:01:11,008 - INFO -  * Restarting with stat
+2025-07-02 20:01:11,951 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:01:12,015 - WARNING -  * Debugger is active!
+2025-07-02 20:01:12,024 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:01:37,453 - INFO - 127.0.0.1 - - [02/Jul/2025 20:01:37] "GET / HTTP/1.1" 200 -
+2025-07-02 20:01:37,590 - INFO - 127.0.0.1 - - [02/Jul/2025 20:01:37] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:01:37,590 - INFO - 127.0.0.1 - - [02/Jul/2025 20:01:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:01:37,685 - INFO - 127.0.0.1 - - [02/Jul/2025 20:01:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-02 20:02:03,338 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 20:02:03,341 - INFO - 127.0.0.1 - - [02/Jul/2025 20:02:03] "POST /login HTTP/1.1" 200 -
+2025-07-02 20:02:03,369 - INFO - 127.0.0.1 - - [02/Jul/2025 20:02:03] "GET /profile HTTP/1.1" 200 -
+2025-07-02 20:02:03,400 - INFO - 127.0.0.1 - - [02/Jul/2025 20:02:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:02:03,404 - INFO - 127.0.0.1 - - [02/Jul/2025 20:02:03] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:02:07,478 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 20:02:07,480 - INFO - 127.0.0.1 - - [02/Jul/2025 20:02:07] "POST /logout HTTP/1.1" 200 -
+2025-07-02 20:02:07,503 - INFO - 127.0.0.1 - - [02/Jul/2025 20:02:07] "GET / HTTP/1.1" 200 -
+2025-07-02 20:02:07,538 - INFO - 127.0.0.1 - - [02/Jul/2025 20:02:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:02:07,549 - INFO - 127.0.0.1 - - [02/Jul/2025 20:02:07] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:02:21,675 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 20:02:21,677 - INFO - 127.0.0.1 - - [02/Jul/2025 20:02:21] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 20:03:59,712 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-02 20:03:59,801 - INFO -  * Restarting with stat
+2025-07-02 20:04:00,857 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:04:00,950 - WARNING -  * Debugger is active!
+2025-07-02 20:04:00,959 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:04:05,433 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:05] "GET / HTTP/1.1" 200 -
+2025-07-02 20:04:05,576 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:05] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:04:05,580 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:05] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:04:20,880 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 20:04:20,882 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:20] "POST /login HTTP/1.1" 200 -
+2025-07-02 20:04:20,915 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:20] "GET /profile HTTP/1.1" 200 -
+2025-07-02 20:04:20,948 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:04:20,949 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:04:26,482 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 20:04:26,483 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:26] "POST /logout HTTP/1.1" 200 -
+2025-07-02 20:04:26,511 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:26] "GET / HTTP/1.1" 200 -
+2025-07-02 20:04:26,553 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:04:26,555 - INFO - 127.0.0.1 - - [02/Jul/2025 20:04:26] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:05:34,977 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-02 20:05:35,077 - INFO -  * Restarting with stat
+2025-07-02 20:05:35,867 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:05:35,953 - WARNING -  * Debugger is active!
+2025-07-02 20:05:35,960 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:05:39,310 - INFO - 127.0.0.1 - - [02/Jul/2025 20:05:39] "GET / HTTP/1.1" 200 -
+2025-07-02 20:05:39,528 - INFO - 127.0.0.1 - - [02/Jul/2025 20:05:39] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:05:39,531 - INFO - 127.0.0.1 - - [02/Jul/2025 20:05:39] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:05:58,482 - INFO -  * Detected change in 'D:\\Gemini_CLI\\app.py', reloading
+2025-07-02 20:05:58,594 - INFO -  * Restarting with stat
+2025-07-02 20:05:59,325 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:05:59,374 - WARNING -  * Debugger is active!
+2025-07-02 20:05:59,382 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:13:42,688 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:13:42,949 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 20:13:42,949 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 20:13:42,953 - INFO -  * Restarting with stat
+2025-07-02 20:13:43,656 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:13:43,703 - WARNING -  * Debugger is active!
+2025-07-02 20:13:43,711 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:13:49,761 - INFO - 127.0.0.1 - - [02/Jul/2025 20:13:49] "GET / HTTP/1.1" 200 -
+2025-07-02 20:13:49,929 - INFO - 127.0.0.1 - - [02/Jul/2025 20:13:49] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:13:49,948 - INFO - 127.0.0.1 - - [02/Jul/2025 20:13:49] "GET /static/3d-background.js HTTP/1.1" 200 -
+2025-07-02 20:13:49,973 - INFO - 127.0.0.1 - - [02/Jul/2025 20:13:49] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-02 20:13:56,782 - INFO - 127.0.0.1 - - [02/Jul/2025 20:13:56] "GET / HTTP/1.1" 200 -
+2025-07-02 20:13:56,809 - INFO - 127.0.0.1 - - [02/Jul/2025 20:13:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:13:56,814 - INFO - 127.0.0.1 - - [02/Jul/2025 20:13:56] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:13:56,825 - INFO - 127.0.0.1 - - [02/Jul/2025 20:13:56] "[36mGET /static/3d-background.js HTTP/1.1[0m" 304 -
+2025-07-02 20:14:04,659 - INFO - 127.0.0.1 - - [02/Jul/2025 20:14:04] "GET / HTTP/1.1" 200 -
+2025-07-02 20:14:04,715 - INFO - 127.0.0.1 - - [02/Jul/2025 20:14:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:14:04,717 - INFO - 127.0.0.1 - - [02/Jul/2025 20:14:04] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:14:04,719 - INFO - 127.0.0.1 - - [02/Jul/2025 20:14:04] "[36mGET /static/3d-background.js HTTP/1.1[0m" 304 -
+2025-07-02 20:16:46,306 - INFO - 127.0.0.1 - - [02/Jul/2025 20:16:46] "GET / HTTP/1.1" 200 -
+2025-07-02 20:16:46,337 - INFO - 127.0.0.1 - - [02/Jul/2025 20:16:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:16:46,338 - INFO - 127.0.0.1 - - [02/Jul/2025 20:16:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:16:46,339 - INFO - 127.0.0.1 - - [02/Jul/2025 20:16:46] "[36mGET /static/3d-background.js HTTP/1.1[0m" 304 -
+2025-07-02 20:17:20,942 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 20:17:20,946 - INFO - 127.0.0.1 - - [02/Jul/2025 20:17:20] "POST /login HTTP/1.1" 200 -
+2025-07-02 20:17:21,028 - INFO - 127.0.0.1 - - [02/Jul/2025 20:17:21] "GET /profile HTTP/1.1" 200 -
+2025-07-02 20:17:21,053 - INFO - 127.0.0.1 - - [02/Jul/2025 20:17:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:17:21,062 - INFO - 127.0.0.1 - - [02/Jul/2025 20:17:21] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:17:26,792 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 20:17:26,793 - INFO - 127.0.0.1 - - [02/Jul/2025 20:17:26] "POST /logout HTTP/1.1" 200 -
+2025-07-02 20:17:26,813 - INFO - 127.0.0.1 - - [02/Jul/2025 20:17:26] "GET / HTTP/1.1" 200 -
+2025-07-02 20:17:26,836 - INFO - 127.0.0.1 - - [02/Jul/2025 20:17:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:17:26,845 - INFO - 127.0.0.1 - - [02/Jul/2025 20:17:26] "[36mGET /static/3d-background.js HTTP/1.1[0m" 304 -
+2025-07-02 20:17:26,847 - INFO - 127.0.0.1 - - [02/Jul/2025 20:17:26] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:23:23,925 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:23:24,067 - INFO -  * Restarting with stat
+2025-07-02 20:23:25,023 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:23:25,103 - WARNING -  * Debugger is active!
+2025-07-02 20:23:25,113 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:23:29,183 - INFO - 127.0.0.1 - - [02/Jul/2025 20:23:29] "GET / HTTP/1.1" 200 -
+2025-07-02 20:23:29,287 - INFO - 127.0.0.1 - - [02/Jul/2025 20:23:29] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:23:29,305 - INFO - 127.0.0.1 - - [02/Jul/2025 20:23:29] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:23:36,673 - INFO - 127.0.0.1 - - [02/Jul/2025 20:23:36] "GET / HTTP/1.1" 200 -
+2025-07-02 20:23:36,711 - INFO - 127.0.0.1 - - [02/Jul/2025 20:23:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:23:36,712 - INFO - 127.0.0.1 - - [02/Jul/2025 20:23:36] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:26:27,396 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:26:27,525 - INFO -  * Restarting with stat
+2025-07-02 20:26:28,377 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:26:28,442 - WARNING -  * Debugger is active!
+2025-07-02 20:26:28,448 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:26:32,159 - INFO - 127.0.0.1 - - [02/Jul/2025 20:26:32] "GET / HTTP/1.1" 200 -
+2025-07-02 20:26:32,241 - INFO - 127.0.0.1 - - [02/Jul/2025 20:26:32] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:26:32,263 - INFO - 127.0.0.1 - - [02/Jul/2025 20:26:32] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:31:30,490 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:31:30,605 - INFO -  * Restarting with stat
+2025-07-02 20:31:31,357 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:31:31,435 - WARNING -  * Debugger is active!
+2025-07-02 20:31:31,442 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:31:36,670 - INFO - 127.0.0.1 - - [02/Jul/2025 20:31:36] "GET / HTTP/1.1" 200 -
+2025-07-02 20:31:36,840 - INFO - 127.0.0.1 - - [02/Jul/2025 20:31:36] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:31:36,863 - INFO - 127.0.0.1 - - [02/Jul/2025 20:31:36] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:33:02,502 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:33:02,594 - INFO -  * Restarting with stat
+2025-07-02 20:33:03,387 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:33:03,451 - WARNING -  * Debugger is active!
+2025-07-02 20:33:03,456 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:33:09,256 - INFO - 127.0.0.1 - - [02/Jul/2025 20:33:09] "GET / HTTP/1.1" 200 -
+2025-07-02 20:33:09,423 - INFO - 127.0.0.1 - - [02/Jul/2025 20:33:09] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:33:09,440 - INFO - 127.0.0.1 - - [02/Jul/2025 20:33:09] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:35:26,640 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:35:26,767 - INFO -  * Restarting with stat
+2025-07-02 20:35:27,506 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:35:27,577 - WARNING -  * Debugger is active!
+2025-07-02 20:35:27,586 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:35:40,648 - INFO - 127.0.0.1 - - [02/Jul/2025 20:35:40] "GET / HTTP/1.1" 200 -
+2025-07-02 20:35:40,828 - INFO - 127.0.0.1 - - [02/Jul/2025 20:35:40] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:35:40,833 - INFO - 127.0.0.1 - - [02/Jul/2025 20:35:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:35:47,357 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' OR 1=1 --
+2025-07-02 20:35:47,359 - INFO - 127.0.0.1 - - [02/Jul/2025 20:35:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-02 20:35:47,372 - INFO - 127.0.0.1 - - [02/Jul/2025 20:35:47] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:35:47,397 - INFO - 127.0.0.1 - - [02/Jul/2025 20:35:47] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:35:47,432 - INFO - 127.0.0.1 - - [02/Jul/2025 20:35:47] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:36:02,807 - INFO - 127.0.0.1 - - [02/Jul/2025 20:36:02] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-02 20:36:02,832 - INFO - 127.0.0.1 - - [02/Jul/2025 20:36:02] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:36:02,860 - INFO - 127.0.0.1 - - [02/Jul/2025 20:36:02] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:36:43,698 - INFO - 127.0.0.1 - - [02/Jul/2025 20:36:43] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-02 20:36:43,728 - INFO - 127.0.0.1 - - [02/Jul/2025 20:36:43] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:36:43,761 - INFO - 127.0.0.1 - - [02/Jul/2025 20:36:43] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:37:36,605 - INFO - 127.0.0.1 - - [02/Jul/2025 20:37:36] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-02 20:37:36,627 - INFO - 127.0.0.1 - - [02/Jul/2025 20:37:36] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:37:36,666 - INFO - 127.0.0.1 - - [02/Jul/2025 20:37:36] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:39:25,248 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:25] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:39:25,278 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:25] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:39:36,194 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:36] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-02 20:39:36,224 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:36] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:39:38,323 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:38] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-02 20:39:38,345 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:38] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:39:38,473 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:38] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-02 20:39:38,500 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:38] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:39:38,688 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:38] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-02 20:39:38,715 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:38] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:39:39,831 - INFO - 127.0.0.1 - - [02/Jul/2025 20:39:39] "[31m[1mGET /profile HTTP/1.1[0m" 403 -
+2025-07-02 20:40:07,554 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:07] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-02 20:40:07,571 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:07] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:40:14,710 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:40:14,831 - INFO -  * Restarting with stat
+2025-07-02 20:40:15,544 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:40:15,603 - WARNING -  * Debugger is active!
+2025-07-02 20:40:15,612 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:40:18,535 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:18] "GET / HTTP/1.1" 200 -
+2025-07-02 20:40:18,637 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:18] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:40:18,638 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:40:30,056 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 20:40:30,058 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:30] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 20:40:30,756 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 20:40:30,757 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:30] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 20:40:31,574 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 20:40:31,575 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:31] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 20:40:32,294 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 20:40:32,296 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:32] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 20:40:33,056 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 20:40:33,058 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:33] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 20:40:33,452 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-02 20:40:33,453 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:33] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-02 20:40:34,403 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-02 20:40:34,404 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:34] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-02 20:40:40,357 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-02 20:40:40,359 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:40] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-02 20:40:42,027 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-02 20:40:42,028 - INFO - 127.0.0.1 - - [02/Jul/2025 20:40:42] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-02 20:41:55,397 - INFO - 127.0.0.1 - - [02/Jul/2025 20:41:55] "GET / HTTP/1.1" 200 -
+2025-07-02 20:41:55,452 - INFO - 127.0.0.1 - - [02/Jul/2025 20:41:55] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-02 20:41:55,452 - INFO - 127.0.0.1 - - [02/Jul/2025 20:41:55] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:43:38,910 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:43:39,027 - INFO -  * Restarting with stat
+2025-07-02 20:43:39,820 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:43:39,907 - WARNING -  * Debugger is active!
+2025-07-02 20:43:39,913 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:43:49,232 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:43:49,306 - INFO -  * Restarting with stat
+2025-07-02 20:43:50,140 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:43:50,198 - WARNING -  * Debugger is active!
+2025-07-02 20:43:50,204 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:45:00,267 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:45:00,348 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 20:45:00,348 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 20:45:00,350 - INFO -  * Restarting with stat
+2025-07-02 20:45:00,989 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:45:01,042 - WARNING -  * Debugger is active!
+2025-07-02 20:45:01,047 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:45:16,219 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:45:16,232 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:45:16,328 - INFO -  * Restarting with stat
+2025-07-02 20:45:16,361 - INFO -  * Restarting with stat
+2025-07-02 20:45:17,309 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:45:17,312 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:45:17,423 - WARNING -  * Debugger is active!
+2025-07-02 20:45:17,424 - WARNING -  * Debugger is active!
+2025-07-02 20:45:17,436 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:45:17,436 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:45:21,521 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:21] "GET / HTTP/1.1" 200 -
+2025-07-02 20:45:21,652 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:45:21,764 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:21] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-02 20:45:31,393 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 20:45:31,397 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:31] "POST /login HTTP/1.1" 200 -
+2025-07-02 20:45:31,537 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:31] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 20:45:31,572 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:45:31,597 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:31] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 20:45:31,624 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:31] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 20:45:52,945 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:52] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 20:45:52,984 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:45:53,038 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:53] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 20:45:53,041 - INFO - 127.0.0.1 - - [02/Jul/2025 20:45:53] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 20:46:14,315 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 20:46:14,318 - INFO - 127.0.0.1 - - [02/Jul/2025 20:46:14] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 20:46:21,800 - INFO - 127.0.0.1 - - [02/Jul/2025 20:46:21] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 20:46:21,830 - INFO - 127.0.0.1 - - [02/Jul/2025 20:46:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:46:21,858 - INFO - 127.0.0.1 - - [02/Jul/2025 20:46:21] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 20:46:21,898 - INFO - 127.0.0.1 - - [02/Jul/2025 20:46:21] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 20:49:03,759 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:49:03,860 - INFO -  * Restarting with stat
+2025-07-02 20:49:04,596 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:49:04,656 - WARNING -  * Debugger is active!
+2025-07-02 20:49:04,662 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:49:29,979 - INFO - 127.0.0.1 - - [02/Jul/2025 20:49:29] "GET / HTTP/1.1" 200 -
+2025-07-02 20:49:30,058 - INFO - 127.0.0.1 - - [02/Jul/2025 20:49:30] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:49:30,059 - INFO - 127.0.0.1 - - [02/Jul/2025 20:49:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:49:44,123 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 20:49:44,125 - INFO - 127.0.0.1 - - [02/Jul/2025 20:49:44] "POST /login HTTP/1.1" 200 -
+2025-07-02 20:49:44,161 - INFO - 127.0.0.1 - - [02/Jul/2025 20:49:44] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 20:49:44,199 - INFO - 127.0.0.1 - - [02/Jul/2025 20:49:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:49:44,228 - INFO - 127.0.0.1 - - [02/Jul/2025 20:49:44] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 20:49:44,254 - INFO - 127.0.0.1 - - [02/Jul/2025 20:49:44] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 20:49:55,176 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 20:49:55,178 - INFO - 127.0.0.1 - - [02/Jul/2025 20:49:55] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 20:50:02,453 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:02] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 20:50:02,492 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:50:02,511 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:02] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 20:50:02,533 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:02] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 20:50:25,387 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' OR 1=1 --
+2025-07-02 20:50:25,390 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-02 20:50:25,402 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:25] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:50:25,428 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:25] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:50:25,456 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:25] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:50:28,755 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:28] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-02 20:50:28,796 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:28] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:50:31,349 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:31] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-02 20:50:31,380 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:31] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:50:34,443 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:34] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:50:34,462 - INFO - 127.0.0.1 - - [02/Jul/2025 20:50:34] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:50:45,392 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:50:45,496 - INFO -  * Restarting with stat
+2025-07-02 20:50:46,403 - WARNING -  * Debugger is active!
+2025-07-02 20:50:46,412 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:54:26,280 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:54:26,388 - INFO -  * Restarting with stat
+2025-07-02 20:54:27,509 - WARNING -  * Debugger is active!
+2025-07-02 20:54:27,516 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:54:55,226 - INFO - 127.0.0.1 - - [02/Jul/2025 20:54:55] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:54:55,254 - INFO - 127.0.0.1 - - [02/Jul/2025 20:54:55] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:54:57,863 - INFO - 127.0.0.1 - - [02/Jul/2025 20:54:57] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:00,713 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:00] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:01,025 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:01] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:06,369 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:06] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:55:06,398 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:06] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:55:09,081 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:09] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:09,234 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:09] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:09,410 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:09] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:09,572 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:09] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:09,753 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:09] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:09,986 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:09] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:27,033 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:55:27,111 - INFO -  * Restarting with stat
+2025-07-02 20:55:27,955 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:55:28,083 - WARNING -  * Debugger is active!
+2025-07-02 20:55:28,096 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:55:29,999 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:29] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:30,222 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:30] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:55:33,074 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:33] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 20:55:33,151 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:33] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:55:36,901 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:36] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 20:55:36,932 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:55:48,805 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 20:55:48,807 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:48] "POST /login HTTP/1.1" 200 -
+2025-07-02 20:55:48,833 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:48] "GET /profile HTTP/1.1" 200 -
+2025-07-02 20:55:48,862 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:55:48,868 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:48] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:55:53,034 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:53] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 20:55:53,065 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:55:53,086 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:53] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 20:55:53,113 - INFO - 127.0.0.1 - - [02/Jul/2025 20:55:53] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 20:56:08,774 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 20:56:08,775 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:08] "POST /logout HTTP/1.1" 200 -
+2025-07-02 20:56:08,806 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:08] "GET / HTTP/1.1" 200 -
+2025-07-02 20:56:08,839 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:56:08,847 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:08] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:56:39,341 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=')) or benchmark(10000000,MD5(1))#
+2025-07-02 20:56:39,343 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-02 20:56:39,359 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:39] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:56:39,382 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:39] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:56:39,416 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:39] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:56:43,590 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:43] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:46,041 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:46] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:46,189 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:46] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:46,412 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:46] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:49,939 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:49] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:50,115 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:50] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:50,296 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:50] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:50,461 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:50] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:50,638 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:50] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:50,837 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:50] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:51,019 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:51] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:51,236 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:51] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 20:56:54,483 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:54] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:56:54,507 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:54] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:56:54,652 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:54] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:56:54,681 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:54] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:56:54,822 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:54] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:56:54,855 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:54] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:56:55,039 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:55] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:56:55,072 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:55] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:56:58,204 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:58] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-02 20:56:58,228 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:58] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 20:56:58,258 - INFO - 127.0.0.1 - - [02/Jul/2025 20:56:58] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:57:00,986 - INFO - 127.0.0.1 - - [02/Jul/2025 20:57:00] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-02 20:57:01,002 - INFO - 127.0.0.1 - - [02/Jul/2025 20:57:01] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 20:58:32,850 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:58:32,961 - INFO -  * Restarting with stat
+2025-07-02 20:58:33,951 - WARNING -  * Debugger is active!
+2025-07-02 20:58:33,971 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:59:14,942 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:59:15,068 - INFO -  * Restarting with stat
+2025-07-02 20:59:16,124 - WARNING -  * Debugger is active!
+2025-07-02 20:59:16,130 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:59:26,618 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 20:59:26,690 - INFO -  * Restarting with stat
+2025-07-02 20:59:27,805 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 20:59:27,916 - WARNING -  * Debugger is active!
+2025-07-02 20:59:27,933 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 20:59:31,744 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:31] "GET / HTTP/1.1" 200 -
+2025-07-02 20:59:31,876 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:31] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 20:59:31,879 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:31] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:59:47,540 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 20:59:47,542 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:47] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 20:59:53,755 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 20:59:53,758 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:53] "POST /login HTTP/1.1" 200 -
+2025-07-02 20:59:53,786 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:53] "GET /profile HTTP/1.1" 200 -
+2025-07-02 20:59:53,816 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:59:53,824 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:53] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 20:59:57,393 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:57] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 20:59:57,428 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 20:59:57,447 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:57] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 20:59:57,481 - INFO - 127.0.0.1 - - [02/Jul/2025 20:59:57] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:00:03,419 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 21:00:03,420 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:03] "POST /logout HTTP/1.1" 200 -
+2025-07-02 21:00:03,448 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:03] "GET / HTTP/1.1" 200 -
+2025-07-02 21:00:03,500 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:00:03,513 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:03] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:00:11,773 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=')) or benchmark(10000000,MD5(1))#
+2025-07-02 21:00:11,774 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-02 21:00:11,786 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:11] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:00:11,811 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:11] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:00:11,852 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:11] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 21:00:14,620 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:14] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:00:16,315 - INFO - 127.0.0.1 - - [02/Jul/2025 21:00:16] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:01:32,205 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 21:01:32,324 - INFO -  * Restarting with stat
+2025-07-02 21:01:33,343 - WARNING -  * Debugger is active!
+2025-07-02 21:01:33,356 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:01:45,522 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 21:01:45,643 - INFO -  * Restarting with stat
+2025-07-02 21:01:46,617 - WARNING -  * Debugger is active!
+2025-07-02 21:01:46,623 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:02:31,621 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 21:02:31,709 - INFO -  * Restarting with stat
+2025-07-02 21:02:32,859 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:02:32,923 - WARNING -  * Debugger is active!
+2025-07-02 21:02:32,930 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:02:36,481 - INFO - 127.0.0.1 - - [02/Jul/2025 21:02:36] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 21:02:36,562 - INFO - 127.0.0.1 - - [02/Jul/2025 21:02:36] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 21:02:39,542 - INFO - 127.0.0.1 - - [02/Jul/2025 21:02:39] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 21:02:39,568 - INFO - 127.0.0.1 - - [02/Jul/2025 21:02:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:02:42,407 - INFO - 127.0.0.1 - - [02/Jul/2025 21:02:42] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:02:46,847 - INFO - 127.0.0.1 - - [02/Jul/2025 21:02:46] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:02:49,415 - INFO - 127.0.0.1 - - [02/Jul/2025 21:02:49] "GET / HTTP/1.1" 200 -
+2025-07-02 21:02:49,446 - INFO - 127.0.0.1 - - [02/Jul/2025 21:02:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:02:49,456 - INFO - 127.0.0.1 - - [02/Jul/2025 21:02:49] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:03:04,595 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-02 21:03:04,597 - INFO - 127.0.0.1 - - [02/Jul/2025 21:03:04] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 21:03:11,396 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:03:11,398 - INFO - 127.0.0.1 - - [02/Jul/2025 21:03:11] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:03:11,434 - INFO - 127.0.0.1 - - [02/Jul/2025 21:03:11] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:03:11,468 - INFO - 127.0.0.1 - - [02/Jul/2025 21:03:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:03:11,478 - INFO - 127.0.0.1 - - [02/Jul/2025 21:03:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:03:14,720 - INFO - 127.0.0.1 - - [02/Jul/2025 21:03:14] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:03:14,748 - INFO - 127.0.0.1 - - [02/Jul/2025 21:03:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:03:14,770 - INFO - 127.0.0.1 - - [02/Jul/2025 21:03:14] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:03:14,804 - INFO - 127.0.0.1 - - [02/Jul/2025 21:03:14] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:04:56,108 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:04:56,170 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 21:04:56,170 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 21:04:56,171 - INFO -  * Restarting with stat
+2025-07-02 21:04:56,814 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:04:56,895 - WARNING -  * Debugger is active!
+2025-07-02 21:04:56,904 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:11:24,383 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 21:11:24,458 - INFO -  * Restarting with stat
+2025-07-02 21:11:25,362 - WARNING -  * Debugger is active!
+2025-07-02 21:11:25,373 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:11:31,617 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:31] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:11:32,630 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:32] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:11:34,893 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:34] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:11:35,814 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:35] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:11:36,035 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:36] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:11:36,229 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:36] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:11:36,423 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:36] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:11:36,644 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:36] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:11:38,568 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:38] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:11:40,195 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:40] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:11:40,410 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:40] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-02 21:11:44,738 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:44] "GET / HTTP/1.1" 200 -
+2025-07-02 21:11:44,898 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:11:44,908 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:44] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:11:51,513 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:11:51,515 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:51] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:11:51,553 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:51] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:11:51,594 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:11:51,597 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:11:55,930 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:55] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:11:55,964 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:11:55,983 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:55] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:11:56,009 - INFO - 127.0.0.1 - - [02/Jul/2025 21:11:56] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:12:31,833 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 21:12:31,934 - INFO -  * Restarting with stat
+2025-07-02 21:19:48,008 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 21:19:48,009 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 21:19:48,011 - INFO -  * Restarting with stat
+2025-07-02 21:19:48,740 - WARNING -  * Debugger is active!
+2025-07-02 21:19:48,745 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:20:00,219 - INFO - 127.0.0.1 - - [02/Jul/2025 21:20:00] "GET / HTTP/1.1" 200 -
+2025-07-02 21:20:00,316 - INFO - 127.0.0.1 - - [02/Jul/2025 21:20:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:20:00,318 - INFO - 127.0.0.1 - - [02/Jul/2025 21:20:00] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:20:53,906 - INFO - 127.0.0.1 - - [02/Jul/2025 21:20:53] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:20:54,909 - INFO - 127.0.0.1 - - [02/Jul/2025 21:20:54] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:21:03,354 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:03] "GET / HTTP/1.1" 200 -
+2025-07-02 21:21:03,389 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:21:03,405 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:03] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:21:05,670 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:05] "[33mGET /admin/logs HTTP/1.1[0m" 404 -
+2025-07-02 21:21:12,479 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:12] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:21:14,617 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:14] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:21:14,773 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:14] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:21:15,005 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:15] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:21:39,846 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:21:39,849 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:39] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:21:39,881 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:39] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:21:39,920 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:21:39,923 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:39] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:21:43,095 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:43] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:21:43,125 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:21:43,151 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:43] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:21:43,180 - INFO - 127.0.0.1 - - [02/Jul/2025 21:21:43] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:22:13,957 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 21:22:14,042 - INFO -  * Restarting with stat
+2025-07-02 21:22:14,843 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:22:14,913 - WARNING -  * Debugger is active!
+2025-07-02 21:22:14,919 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:22:24,706 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:24] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:22:25,682 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:25] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:22:28,289 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:28] "[31m[1mPOST /logout HTTP/1.1[0m" 401 -
+2025-07-02 21:22:28,328 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:28] "GET / HTTP/1.1" 200 -
+2025-07-02 21:22:28,499 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:22:28,504 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:28] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:22:41,707 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:22:41,710 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:41] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:22:41,753 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:41] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:22:41,794 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:22:41,797 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:41] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:22:44,298 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:44] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:22:44,332 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:22:44,353 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:44] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:22:44,382 - INFO - 127.0.0.1 - - [02/Jul/2025 21:22:44] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:24:52,425 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 21:24:52,427 - INFO - 127.0.0.1 - - [02/Jul/2025 21:24:52] "POST /logout HTTP/1.1" 200 -
+2025-07-02 21:24:52,459 - INFO - 127.0.0.1 - - [02/Jul/2025 21:24:52] "GET / HTTP/1.1" 200 -
+2025-07-02 21:24:52,500 - INFO - 127.0.0.1 - - [02/Jul/2025 21:24:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:24:52,510 - INFO - 127.0.0.1 - - [02/Jul/2025 21:24:52] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:24:58,623 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username
+2025-07-02 21:24:58,625 - INFO - 127.0.0.1 - - [02/Jul/2025 21:24:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-02 21:24:58,649 - INFO - 127.0.0.1 - - [02/Jul/2025 21:24:58] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:24:58,674 - INFO - 127.0.0.1 - - [02/Jul/2025 21:24:58] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:24:58,717 - INFO - 127.0.0.1 - - [02/Jul/2025 21:24:58] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 21:25:03,014 - INFO - 127.0.0.1 - - [02/Jul/2025 21:25:03] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-02 21:25:03,050 - INFO - 127.0.0.1 - - [02/Jul/2025 21:25:03] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 21:25:20,738 - INFO - 127.0.0.1 - - [02/Jul/2025 21:25:20] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-02 21:25:20,773 - INFO - 127.0.0.1 - - [02/Jul/2025 21:25:20] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 21:27:46,595 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:27:46,720 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 21:27:46,721 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 21:27:46,725 - INFO -  * Restarting with stat
+2025-07-02 21:27:47,444 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:27:47,510 - WARNING -  * Debugger is active!
+2025-07-02 21:27:47,520 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:27:56,641 - INFO - 127.0.0.1 - - [02/Jul/2025 21:27:56] "GET / HTTP/1.1" 200 -
+2025-07-02 21:27:56,835 - INFO - 127.0.0.1 - - [02/Jul/2025 21:27:56] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 21:27:56,837 - INFO - 127.0.0.1 - - [02/Jul/2025 21:27:56] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:28:11,064 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:28:11,066 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:11] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:28:11,109 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:11] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:28:11,160 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:28:11,163 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:28:18,650 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:18] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:28:18,681 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:28:18,712 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:18] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:28:18,739 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:18] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:28:29,463 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 21:28:29,465 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:29] "POST /logout HTTP/1.1" 200 -
+2025-07-02 21:28:29,488 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:29] "GET / HTTP/1.1" 200 -
+2025-07-02 21:28:29,537 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:28:29,552 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:29] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:28:36,973 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:36] "[31m[1mPOST /logout HTTP/1.1[0m" 401 -
+2025-07-02 21:28:37,004 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:37] "GET / HTTP/1.1" 200 -
+2025-07-02 21:28:37,059 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:28:37,061 - INFO - 127.0.0.1 - - [02/Jul/2025 21:28:37] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:31:58,305 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:31:58,382 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 21:31:58,382 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 21:31:58,384 - INFO -  * Restarting with stat
+2025-07-02 21:31:59,011 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:31:59,075 - WARNING -  * Debugger is active!
+2025-07-02 21:31:59,083 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:32:09,188 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:09] "GET / HTTP/1.1" 200 -
+2025-07-02 21:32:09,342 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:32:09,344 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:09] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:32:19,604 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:32:19,608 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:19] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:32:19,649 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:19] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:32:19,681 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:32:19,688 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:19] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:32:25,027 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:25] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:32:25,049 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:32:25,071 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:25] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:32:25,129 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:25] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:32:34,031 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 21:32:34,032 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:34] "POST /logout HTTP/1.1" 200 -
+2025-07-02 21:32:34,059 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:34] "GET / HTTP/1.1" 200 -
+2025-07-02 21:32:34,098 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:32:34,106 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:34] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:32:47,692 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username
+2025-07-02 21:32:47,694 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-02 21:32:47,706 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:47] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:32:47,732 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:47] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:32:47,779 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:47] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 21:32:52,182 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:52] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-02 21:32:52,212 - INFO - 127.0.0.1 - - [02/Jul/2025 21:32:52] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 21:33:24,401 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-02 21:33:24,480 - INFO -  * Restarting with stat
+2025-07-02 21:33:25,334 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:33:25,395 - WARNING -  * Debugger is active!
+2025-07-02 21:33:25,403 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:33:32,392 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:32] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 21:33:32,485 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:32] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 21:33:34,818 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:34] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 21:33:34,845 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:33:36,456 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:36] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 21:33:36,495 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:33:36,679 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:36] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 21:33:36,720 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:33:39,531 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:39] "GET / HTTP/1.1" 200 -
+2025-07-02 21:33:39,564 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:33:39,566 - INFO - 127.0.0.1 - - [02/Jul/2025 21:33:39] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:35:07,239 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Username not found: abc
+2025-07-02 21:35:07,240 - INFO - 127.0.0.1 - - [02/Jul/2025 21:35:07] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 21:35:12,595 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Username not found: abc
+2025-07-02 21:35:12,597 - INFO - 127.0.0.1 - - [02/Jul/2025 21:35:12] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 21:35:16,873 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Username not found: abc
+2025-07-02 21:35:16,876 - INFO - 127.0.0.1 - - [02/Jul/2025 21:35:16] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 21:35:20,591 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Username not found: abc
+2025-07-02 21:35:20,593 - INFO - 127.0.0.1 - - [02/Jul/2025 21:35:20] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 21:35:25,648 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Username not found: abc
+2025-07-02 21:35:25,650 - INFO - 127.0.0.1 - - [02/Jul/2025 21:35:25] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-02 21:35:30,226 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-02 21:35:30,227 - INFO - 127.0.0.1 - - [02/Jul/2025 21:35:30] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-02 21:35:48,929 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-02 21:35:48,930 - INFO - 127.0.0.1 - - [02/Jul/2025 21:35:48] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-02 21:38:40,822 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:38:40,931 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 21:38:40,932 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 21:38:40,936 - INFO -  * Restarting with stat
+2025-07-02 21:38:41,899 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:38:41,984 - WARNING -  * Debugger is active!
+2025-07-02 21:38:41,991 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:39:10,252 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:10] "GET / HTTP/1.1" 200 -
+2025-07-02 21:39:10,349 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:39:10,353 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:39:18,372 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:18] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:39:20,188 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:20] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:39:20,338 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:20] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:39:20,564 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:20] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:39:35,966 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:39:35,969 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:35] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:39:35,992 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:35] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:39:36,027 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:36] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:39:36,028 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:39:38,483 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:38] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:39:38,514 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:39:38,544 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:38] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:39:38,576 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:38] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:39:42,978 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 21:39:42,979 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:42] "POST /logout HTTP/1.1" 200 -
+2025-07-02 21:39:43,007 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:43] "GET / HTTP/1.1" 200 -
+2025-07-02 21:39:43,040 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:39:43,042 - INFO - 127.0.0.1 - - [02/Jul/2025 21:39:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:40:11,153 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:40:11,155 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:11] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:40:11,192 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:11] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:40:11,239 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:40:11,249 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:40:17,040 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:17] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:40:17,065 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:40:17,087 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:17] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:40:17,129 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:17] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:40:26,814 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 21:40:26,815 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:26] "POST /logout HTTP/1.1" 200 -
+2025-07-02 21:40:26,837 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:26] "GET / HTTP/1.1" 200 -
+2025-07-02 21:40:26,865 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:40:26,871 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:26] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:40:45,749 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username
+2025-07-02 21:40:45,751 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-02 21:40:45,773 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:45] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:40:45,803 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:45] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:40:45,852 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:45] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 21:40:49,295 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:49] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-02 21:40:49,333 - INFO - 127.0.0.1 - - [02/Jul/2025 21:40:49] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 21:42:32,456 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:42:32,587 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 21:42:32,588 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 21:42:32,592 - INFO -  * Restarting with stat
+2025-07-02 21:42:33,433 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-02 21:42:33,526 - WARNING -  * Debugger is active!
+2025-07-02 21:42:33,536 - INFO -  * Debugger PIN: 148-639-104
+2025-07-02 21:42:40,231 - INFO - 127.0.0.1 - - [02/Jul/2025 21:42:40] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 21:42:40,303 - INFO - 127.0.0.1 - - [02/Jul/2025 21:42:40] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-02 21:42:41,985 - INFO - 127.0.0.1 - - [02/Jul/2025 21:42:41] "GET /access-denied HTTP/1.1" 200 -
+2025-07-02 21:42:42,026 - INFO - 127.0.0.1 - - [02/Jul/2025 21:42:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:42:45,330 - INFO - 127.0.0.1 - - [02/Jul/2025 21:42:45] "GET / HTTP/1.1" 200 -
+2025-07-02 21:42:45,359 - INFO - 127.0.0.1 - - [02/Jul/2025 21:42:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:42:45,360 - INFO - 127.0.0.1 - - [02/Jul/2025 21:42:45] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:42:47,982 - INFO - 127.0.0.1 - - [02/Jul/2025 21:42:47] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-02 21:43:11,407 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:43:11,409 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:11] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:43:11,444 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:11] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:43:11,477 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:43:11,481 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:43:15,981 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:15] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:43:16,016 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:43:16,032 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:16] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:43:16,061 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:16] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:43:18,703 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 21:43:18,704 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:18] "POST /logout HTTP/1.1" 200 -
+2025-07-02 21:43:18,733 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:18] "GET / HTTP/1.1" 200 -
+2025-07-02 21:43:18,775 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:43:18,776 - INFO - 127.0.0.1 - - [02/Jul/2025 21:43:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:44:38,769 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-02 21:44:38,771 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:38] "POST /login HTTP/1.1" 200 -
+2025-07-02 21:44:38,806 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:38] "GET /profile HTTP/1.1" 200 -
+2025-07-02 21:44:38,846 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:38] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:44:38,849 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:44:44,642 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:44] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-02 21:44:44,677 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:44:44,702 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:44] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-02 21:44:44,753 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:44] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-02 21:44:55,048 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-02 21:44:55,049 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:55] "POST /logout HTTP/1.1" 200 -
+2025-07-02 21:44:55,075 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:55] "GET / HTTP/1.1" 200 -
+2025-07-02 21:44:55,108 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-02 21:44:55,111 - INFO - 127.0.0.1 - - [02/Jul/2025 21:44:55] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-02 21:45:07,523 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username
+2025-07-02 21:45:07,525 - INFO - 127.0.0.1 - - [02/Jul/2025 21:45:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-02 21:45:07,533 - INFO - 127.0.0.1 - - [02/Jul/2025 21:45:07] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:45:07,552 - INFO - 127.0.0.1 - - [02/Jul/2025 21:45:07] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-02 21:45:07,589 - INFO - 127.0.0.1 - - [02/Jul/2025 21:45:07] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-02 21:45:11,485 - INFO - 127.0.0.1 - - [02/Jul/2025 21:45:11] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-02 21:45:11,507 - INFO - 127.0.0.1 - - [02/Jul/2025 21:45:11] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:05:15,283 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:05:15,412 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-03 22:05:15,413 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-03 22:05:15,415 - INFO -  * Restarting with stat
+2025-07-03 22:05:16,144 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:05:16,224 - WARNING -  * Debugger is active!
+2025-07-03 22:05:16,234 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:05:31,009 - INFO - 127.0.0.1 - - [03/Jul/2025 22:05:31] "GET / HTTP/1.1" 200 -
+2025-07-03 22:05:31,127 - INFO - 127.0.0.1 - - [03/Jul/2025 22:05:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:05:31,131 - INFO - 127.0.0.1 - - [03/Jul/2025 22:05:31] "GET /static/script.js HTTP/1.1" 200 -
+2025-07-03 22:05:31,191 - INFO - 127.0.0.1 - - [03/Jul/2025 22:05:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-03 22:06:02,008 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-03 22:06:02,012 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:02] "POST /login HTTP/1.1" 200 -
+2025-07-03 22:06:02,051 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:02] "GET /profile HTTP/1.1" 200 -
+2025-07-03 22:06:02,083 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:06:02,085 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:02] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:06:31,753 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:31] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-03 22:06:42,293 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:42] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-03 22:06:42,336 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:06:42,360 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:42] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-03 22:06:42,395 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:42] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-03 22:06:53,506 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-03 22:06:53,508 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:53] "POST /logout HTTP/1.1" 200 -
+2025-07-03 22:06:53,533 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:53] "GET / HTTP/1.1" 200 -
+2025-07-03 22:06:53,569 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:06:53,582 - INFO - 127.0.0.1 - - [03/Jul/2025 22:06:53] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:07:01,495 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username
+2025-07-03 22:07:01,497 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-03 22:07:01,513 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:01] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-03 22:07:01,539 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:01] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-03 22:07:01,567 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:01] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:07:05,085 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:05] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-03 22:07:05,106 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:05] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:07:13,014 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:13] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-03 22:07:13,045 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:13] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:07:15,946 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:15] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-03 22:07:15,971 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:15] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:07:18,031 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:18] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-03 22:07:18,054 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:18] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:07:34,111 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:07:34,328 - INFO -  * Restarting with stat
+2025-07-03 22:07:36,690 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:07:36,884 - WARNING -  * Debugger is active!
+2025-07-03 22:07:36,907 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:07:38,163 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:38] "GET / HTTP/1.1" 200 -
+2025-07-03 22:07:38,287 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:38] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-03 22:07:38,292 - INFO - 127.0.0.1 - - [03/Jul/2025 22:07:38] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:08:09,647 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:08:09,649 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:09] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:08:14,032 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:08:14,034 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:14] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:08:16,916 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:08:16,918 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:16] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:08:19,231 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:08:19,233 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:19] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:08:21,819 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:08:21,821 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:21] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:08:23,116 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:08:23,118 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:23] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:08:39,119 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:08:39,121 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:39] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:08:41,778 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:08:41,779 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:41] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:08:41,950 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:08:41,951 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:41] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:08:42,116 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:08:42,117 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:42] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:08:42,335 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:08:42,336 - INFO - 127.0.0.1 - - [03/Jul/2025 22:08:42] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:32:41,633 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:32:41,710 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-03 22:32:41,711 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-03 22:32:41,713 - INFO -  * Restarting with stat
+2025-07-03 22:32:42,392 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:32:42,452 - WARNING -  * Debugger is active!
+2025-07-03 22:32:42,458 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:32:51,842 - INFO - 127.0.0.1 - - [03/Jul/2025 22:32:51] "GET / HTTP/1.1" 200 -
+2025-07-03 22:32:51,958 - INFO - 127.0.0.1 - - [03/Jul/2025 22:32:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:32:51,959 - INFO - 127.0.0.1 - - [03/Jul/2025 22:32:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:33:14,273 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:33:14,274 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:14] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:33:14,458 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:33:14,460 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:14] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:33:14,639 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:33:14,641 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:14] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:33:14,858 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:33:14,859 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:14] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:33:15,864 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-03 22:33:15,868 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:15] "POST /login HTTP/1.1" 200 -
+2025-07-03 22:33:15,904 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:15] "GET /profile HTTP/1.1" 200 -
+2025-07-03 22:33:15,945 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:33:15,954 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:15] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:33:18,868 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-03 22:33:18,870 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:18] "POST /login HTTP/1.1" 200 -
+2025-07-03 22:33:19,650 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-03 22:33:19,652 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:19] "POST /login HTTP/1.1" 200 -
+2025-07-03 22:33:19,902 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-03 22:33:19,904 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:19] "POST /login HTTP/1.1" 200 -
+2025-07-03 22:33:20,104 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-03 22:33:20,106 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:20] "POST /login HTTP/1.1" 200 -
+2025-07-03 22:33:21,119 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-03 22:33:21,120 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:21] "POST /logout HTTP/1.1" 200 -
+2025-07-03 22:33:21,148 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:21] "GET / HTTP/1.1" 200 -
+2025-07-03 22:33:21,186 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:33:21,199 - INFO - 127.0.0.1 - - [03/Jul/2025 22:33:21] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:34:47,869 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:34:48,000 - INFO -  * Restarting with stat
+2025-07-03 22:34:48,904 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:34:49,007 - WARNING -  * Debugger is active!
+2025-07-03 22:34:49,019 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:34:53,935 - INFO - 127.0.0.1 - - [03/Jul/2025 22:34:53] "GET / HTTP/1.1" 200 -
+2025-07-03 22:34:54,084 - INFO - 127.0.0.1 - - [03/Jul/2025 22:34:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:34:54,086 - INFO - 127.0.0.1 - - [03/Jul/2025 22:34:54] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:35:08,779 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:35:08,780 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:08] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:35:11,269 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:35:11,271 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:11] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:35:12,036 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:35:12,038 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:12] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:35:12,495 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:35:12,496 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:12] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:35:12,761 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:35:12,762 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:12] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:35:12,975 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:12,976 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:12] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:14,215 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:14,217 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:14] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:14,714 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:14,715 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:14] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:14,911 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:14,913 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:14] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:15,138 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:15,139 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:15] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:26,810 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:26,812 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:26] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:28,445 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:28,446 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:28] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:28,638 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:28,639 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:28] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:28,840 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:28,842 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:28] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:29,037 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:29,038 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:29] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:29,269 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:29,271 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:29] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:29,461 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:29,463 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:29] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:29,684 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:29,686 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:29] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:30,500 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:30,501 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:30] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:30,686 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:30,687 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:30] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:30,869 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:30,870 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:30] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:31,087 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:31,089 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:31] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:33,103 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:33,104 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:33] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:33,274 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:33,276 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:33] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:33,437 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:33,439 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:33] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:33,608 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:33,610 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:33] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:33,772 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:33,773 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:33] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:33,931 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:33,933 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:33] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:34,151 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:34,152 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:34] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:35:41,798 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:41] "GET / HTTP/1.1" 200 -
+2025-07-03 22:35:41,818 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:35:41,819 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:41] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:35:48,034 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:35:48,035 - INFO - 127.0.0.1 - - [03/Jul/2025 22:35:48] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:12,669 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:37:12,671 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:12] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:37:16,490 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:37:16,491 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:16] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:37:28,666 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:37:28,668 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:28] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:37:31,676 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:37:31,677 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:31] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:37:32,647 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:37:32,648 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:32] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:37:41,755 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:41,756 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:41] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:43,229 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:43,230 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:43] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:43,426 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:43,427 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:43] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:43,607 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:43,609 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:43] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:43,793 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:43,795 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:43] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:43,980 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:43,981 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:43] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:44,143 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:44,145 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:44] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:44,326 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:44,327 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:44] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:44,510 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:44,512 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:44] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:44,699 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:44,701 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:44] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:44,879 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:44,881 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:44] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:45,062 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:45,064 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:45] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:45,225 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:45,226 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:45] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:45,393 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:45,394 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:45] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:45,613 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:45,614 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:45] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:46,502 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:46,503 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:46] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:47,010 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:47,012 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:47] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:47,215 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:47,216 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:47] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:47,448 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:47,450 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:47] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:47,670 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:47,671 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:47] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:49,204 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:49,205 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:49] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:37:50,401 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-07-03 22:37:50,403 - INFO - 127.0.0.1 - - [03/Jul/2025 22:37:50] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:38:53,166 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - Too many login attempts
+2025-07-03 22:38:53,168 - INFO - 127.0.0.1 - - [03/Jul/2025 22:38:53] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-07-03 22:38:57,153 - INFO - 127.0.0.1 - - [03/Jul/2025 22:38:57] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-03 22:38:57,181 - INFO - 127.0.0.1 - - [03/Jul/2025 22:38:57] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-03 22:38:57,230 - INFO - 127.0.0.1 - - [03/Jul/2025 22:38:57] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:39:00,574 - INFO - 127.0.0.1 - - [03/Jul/2025 22:39:00] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-03 22:39:00,604 - INFO - 127.0.0.1 - - [03/Jul/2025 22:39:00] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:39:00,744 - INFO - 127.0.0.1 - - [03/Jul/2025 22:39:00] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-03 22:39:00,773 - INFO - 127.0.0.1 - - [03/Jul/2025 22:39:00] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:39:00,959 - INFO - 127.0.0.1 - - [03/Jul/2025 22:39:00] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-03 22:39:00,982 - INFO - 127.0.0.1 - - [03/Jul/2025 22:39:00] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-03 22:44:53,053 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:44:53,122 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-03 22:44:53,123 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-03 22:44:53,124 - INFO -  * Restarting with stat
+2025-07-03 22:44:53,748 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:44:53,798 - WARNING -  * Debugger is active!
+2025-07-03 22:44:53,805 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:45:47,938 - INFO - 127.0.0.1 - - [03/Jul/2025 22:45:47] "GET / HTTP/1.1" 200 -
+2025-07-03 22:45:48,073 - INFO - 127.0.0.1 - - [03/Jul/2025 22:45:48] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:45:48,077 - INFO - 127.0.0.1 - - [03/Jul/2025 22:45:48] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-03 22:46:03,880 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:46:03,882 - INFO - 127.0.0.1 - - [03/Jul/2025 22:46:03] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:46:13,537 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:46:13,539 - INFO - 127.0.0.1 - - [03/Jul/2025 22:46:13] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:46:45,056 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: john_doe
+2025-07-03 22:46:45,057 - INFO - 127.0.0.1 - - [03/Jul/2025 22:46:45] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:46:54,095 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:46:54,225 - INFO -  * Restarting with stat
+2025-07-03 22:46:55,045 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:46:55,101 - WARNING -  * Debugger is active!
+2025-07-03 22:46:55,108 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:46:57,218 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:46:57,316 - INFO -  * Restarting with stat
+2025-07-03 22:46:58,040 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:46:58,125 - WARNING -  * Debugger is active!
+2025-07-03 22:46:58,136 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:47:02,276 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:47:02,356 - INFO -  * Restarting with stat
+2025-07-03 22:47:03,137 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:47:03,232 - WARNING -  * Debugger is active!
+2025-07-03 22:47:03,242 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:47:13,082 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: john_doe
+2025-07-03 22:47:13,084 - INFO - 127.0.0.1 - - [03/Jul/2025 22:47:13] "POST /login HTTP/1.1" 200 -
+2025-07-03 22:47:13,130 - INFO - 127.0.0.1 - - [03/Jul/2025 22:47:13] "GET /profile HTTP/1.1" 200 -
+2025-07-03 22:47:13,317 - INFO - 127.0.0.1 - - [03/Jul/2025 22:47:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:47:13,322 - INFO - 127.0.0.1 - - [03/Jul/2025 22:47:13] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:47:16,608 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: john_doe
+2025-07-03 22:47:16,609 - INFO - 127.0.0.1 - - [03/Jul/2025 22:47:16] "POST /logout HTTP/1.1" 200 -
+2025-07-03 22:47:16,630 - INFO - 127.0.0.1 - - [03/Jul/2025 22:47:16] "GET / HTTP/1.1" 200 -
+2025-07-03 22:47:16,656 - INFO - 127.0.0.1 - - [03/Jul/2025 22:47:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:47:16,657 - INFO - 127.0.0.1 - - [03/Jul/2025 22:47:16] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:51:04,179 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:51:04,266 - INFO -  * Restarting with stat
+2025-07-03 22:51:05,106 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:51:05,223 - WARNING -  * Debugger is active!
+2025-07-03 22:51:05,235 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:51:30,081 - INFO - 127.0.0.1 - - [03/Jul/2025 22:51:30] "GET / HTTP/1.1" 200 -
+2025-07-03 22:51:30,237 - INFO - 127.0.0.1 - - [03/Jul/2025 22:51:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:51:30,242 - INFO - 127.0.0.1 - - [03/Jul/2025 22:51:30] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:51:38,980 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-03 22:51:38,982 - INFO - 127.0.0.1 - - [03/Jul/2025 22:51:38] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-03 22:51:58,853 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-03 22:51:58,855 - INFO - 127.0.0.1 - - [03/Jul/2025 22:51:58] "POST /login HTTP/1.1" 200 -
+2025-07-03 22:51:58,893 - INFO - 127.0.0.1 - - [03/Jul/2025 22:51:58] "GET /profile HTTP/1.1" 200 -
+2025-07-03 22:51:58,934 - INFO - 127.0.0.1 - - [03/Jul/2025 22:51:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:51:58,948 - INFO - 127.0.0.1 - - [03/Jul/2025 22:51:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:52:01,270 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-03 22:52:01,272 - INFO - 127.0.0.1 - - [03/Jul/2025 22:52:01] "POST /logout HTTP/1.1" 200 -
+2025-07-03 22:52:01,298 - INFO - 127.0.0.1 - - [03/Jul/2025 22:52:01] "GET / HTTP/1.1" 200 -
+2025-07-03 22:52:01,334 - INFO - 127.0.0.1 - - [03/Jul/2025 22:52:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 22:52:01,343 - INFO - 127.0.0.1 - - [03/Jul/2025 22:52:01] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-03 22:52:11,079 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:52:11,235 - INFO -  * Restarting with stat
+2025-07-03 22:52:12,323 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:52:12,404 - WARNING -  * Debugger is active!
+2025-07-03 22:52:12,412 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:52:14,505 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:52:14,650 - INFO -  * Restarting with stat
+2025-07-03 22:52:15,748 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:52:15,814 - WARNING -  * Debugger is active!
+2025-07-03 22:52:15,822 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:52:16,891 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:52:17,006 - INFO -  * Restarting with stat
+2025-07-03 22:52:18,036 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:52:18,149 - WARNING -  * Debugger is active!
+2025-07-03 22:52:18,160 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:52:56,032 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:52:56,142 - INFO -  * Restarting with stat
+2025-07-03 22:52:57,194 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:52:57,261 - WARNING -  * Debugger is active!
+2025-07-03 22:52:57,269 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:53:02,470 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:53:02,604 - INFO -  * Restarting with stat
+2025-07-03 22:53:03,531 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:53:03,599 - WARNING -  * Debugger is active!
+2025-07-03 22:53:03,609 - INFO -  * Debugger PIN: 438-468-350
+2025-07-03 22:53:05,775 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-03 22:53:05,891 - INFO -  * Restarting with stat
+2025-07-03 22:53:06,822 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-03 22:53:06,892 - WARNING -  * Debugger is active!
+2025-07-03 22:53:06,899 - INFO -  * Debugger PIN: 438-468-350
+2025-07-05 20:58:00,327 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-05 20:58:00,827 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-05 20:58:00,828 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-05 20:58:00,832 - INFO -  * Restarting with stat
+2025-07-05 20:58:01,652 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-05 20:58:01,718 - WARNING -  * Debugger is active!
+2025-07-05 20:58:01,725 - INFO -  * Debugger PIN: 438-468-350
+2025-07-05 20:58:06,759 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:06] "GET / HTTP/1.1" 200 -
+2025-07-05 20:58:07,210 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 20:58:07,234 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:07] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 20:58:07,283 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-05 20:58:25,897 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-05 20:58:25,901 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:25] "POST /login HTTP/1.1" 200 -
+2025-07-05 20:58:25,992 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:25] "GET /profile HTTP/1.1" 200 -
+2025-07-05 20:58:26,031 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 20:58:26,034 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:26] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 20:58:40,672 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:40] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 20:58:40,735 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 20:58:41,469 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:41] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 20:58:41,499 - INFO - 127.0.0.1 - - [05/Jul/2025 20:58:41] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 20:59:20,433 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-05 20:59:20,434 - INFO - 127.0.0.1 - - [05/Jul/2025 20:59:20] "POST /logout HTTP/1.1" 200 -
+2025-07-05 20:59:20,463 - INFO - 127.0.0.1 - - [05/Jul/2025 20:59:20] "GET / HTTP/1.1" 200 -
+2025-07-05 20:59:20,516 - INFO - 127.0.0.1 - - [05/Jul/2025 20:59:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 20:59:20,518 - INFO - 127.0.0.1 - - [05/Jul/2025 20:59:20] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 20:59:22,646 - INFO - 127.0.0.1 - - [05/Jul/2025 20:59:22] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-05 20:59:24,045 - INFO - 127.0.0.1 - - [05/Jul/2025 20:59:24] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-05 22:12:30,133 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-05 22:12:30,311 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-05 22:12:30,312 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-05 22:12:30,316 - INFO -  * Restarting with stat
+2025-07-05 22:12:31,621 - ERROR - Error loading blocked IPs: Expecting value: line 1 column 1 (char 0)
+2025-07-05 22:12:31,738 - WARNING -  * Debugger is active!
+2025-07-05 22:12:31,748 - INFO -  * Debugger PIN: 438-468-350
+2025-07-05 22:12:50,898 - INFO - 127.0.0.1 - - [05/Jul/2025 22:12:50] "GET / HTTP/1.1" 200 -
+2025-07-05 22:12:50,922 - INFO - 127.0.0.1 - - [05/Jul/2025 22:12:50] "GET / HTTP/1.1" 200 -
+2025-07-05 22:12:51,368 - INFO - 127.0.0.1 - - [05/Jul/2025 22:12:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 22:12:51,368 - INFO - 127.0.0.1 - - [05/Jul/2025 22:12:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:12:51,380 - INFO - 127.0.0.1 - - [05/Jul/2025 22:12:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:12:51,386 - INFO - 127.0.0.1 - - [05/Jul/2025 22:12:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 22:12:51,523 - INFO - 127.0.0.1 - - [05/Jul/2025 22:12:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-05 22:12:51,534 - INFO - 127.0.0.1 - - [05/Jul/2025 22:12:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-05 22:13:01,543 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username
+2025-07-05 22:13:01,545 - INFO - 127.0.0.1 - - [05/Jul/2025 22:13:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-05 22:13:01,707 - INFO - 127.0.0.1 - - [05/Jul/2025 22:13:01] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-05 22:13:01,741 - INFO - 127.0.0.1 - - [05/Jul/2025 22:13:01] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-05 22:13:01,790 - INFO - 127.0.0.1 - - [05/Jul/2025 22:13:01] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-05 22:14:35,668 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-05 22:14:35,963 - INFO -  * Restarting with stat
+2025-07-05 22:14:38,830 - WARNING -  * Debugger is active!
+2025-07-05 22:14:38,838 - INFO -  * Debugger PIN: 438-468-350
+2025-07-05 22:14:43,327 - INFO - 127.0.0.1 - - [05/Jul/2025 22:14:43] "GET /access-denied HTTP/1.1" 200 -
+2025-07-05 22:14:43,406 - INFO - 127.0.0.1 - - [05/Jul/2025 22:14:43] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-05 22:14:45,727 - INFO - 127.0.0.1 - - [05/Jul/2025 22:14:45] "GET /access-denied HTTP/1.1" 200 -
+2025-07-05 22:14:45,756 - INFO - 127.0.0.1 - - [05/Jul/2025 22:14:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:14:52,075 - INFO - 127.0.0.1 - - [05/Jul/2025 22:14:52] "GET / HTTP/1.1" 200 -
+2025-07-05 22:14:52,105 - INFO - 127.0.0.1 - - [05/Jul/2025 22:14:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:14:52,107 - INFO - 127.0.0.1 - - [05/Jul/2025 22:14:52] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 22:15:17,883 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-05 22:15:17,886 - INFO - 127.0.0.1 - - [05/Jul/2025 22:15:17] "POST /login HTTP/1.1" 200 -
+2025-07-05 22:15:17,932 - INFO - 127.0.0.1 - - [05/Jul/2025 22:15:17] "GET /profile HTTP/1.1" 200 -
+2025-07-05 22:15:17,973 - INFO - 127.0.0.1 - - [05/Jul/2025 22:15:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:15:17,986 - INFO - 127.0.0.1 - - [05/Jul/2025 22:15:17] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 22:15:26,072 - INFO - 127.0.0.1 - - [05/Jul/2025 22:15:26] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 22:15:26,222 - INFO - 127.0.0.1 - - [05/Jul/2025 22:15:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:15:26,354 - INFO - 127.0.0.1 - - [05/Jul/2025 22:15:26] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 22:15:26,375 - INFO - 127.0.0.1 - - [05/Jul/2025 22:15:26] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 22:16:52,371 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-05 22:16:52,455 - INFO -  * Restarting with stat
+2025-07-05 22:16:53,729 - WARNING -  * Debugger is active!
+2025-07-05 22:16:53,740 - INFO -  * Debugger PIN: 438-468-350
+2025-07-05 22:16:55,169 - INFO - 127.0.0.1 - - [05/Jul/2025 22:16:55] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-05 22:16:56,637 - INFO - 127.0.0.1 - - [05/Jul/2025 22:16:56] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-05 22:17:00,102 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:00] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-05 22:17:01,573 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:01] "[31m[1mGET /profile HTTP/1.1[0m" 401 -
+2025-07-05 22:17:06,251 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-05 22:17:06,253 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:06] "POST /login HTTP/1.1" 200 -
+2025-07-05 22:17:06,281 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:06] "GET /profile HTTP/1.1" 200 -
+2025-07-05 22:17:06,438 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:06] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 22:17:06,442 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:17:09,006 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:09] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 22:17:09,036 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:17:09,077 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:09] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 22:17:09,110 - INFO - 127.0.0.1 - - [05/Jul/2025 22:17:09] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 22:18:23,450 - INFO - 127.0.0.1 - - [05/Jul/2025 22:18:23] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 22:18:23,480 - INFO - 127.0.0.1 - - [05/Jul/2025 22:18:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:18:23,512 - INFO - 127.0.0.1 - - [05/Jul/2025 22:18:23] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 22:18:23,519 - INFO - 127.0.0.1 - - [05/Jul/2025 22:18:23] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 22:22:21,250 - INFO - 127.0.0.1 - - [05/Jul/2025 22:22:21] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 22:22:21,282 - INFO - 127.0.0.1 - - [05/Jul/2025 22:22:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:22:21,335 - INFO - 127.0.0.1 - - [05/Jul/2025 22:22:21] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 22:22:21,359 - INFO - 127.0.0.1 - - [05/Jul/2025 22:22:21] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 22:31:22,859 - INFO - 127.0.0.1 - - [05/Jul/2025 22:31:22] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 22:31:22,890 - INFO - 127.0.0.1 - - [05/Jul/2025 22:31:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:31:22,944 - INFO - 127.0.0.1 - - [05/Jul/2025 22:31:22] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 22:31:22,949 - INFO - 127.0.0.1 - - [05/Jul/2025 22:31:22] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 22:32:45,314 - INFO - 127.0.0.1 - - [05/Jul/2025 22:32:45] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 22:32:45,338 - INFO - 127.0.0.1 - - [05/Jul/2025 22:32:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:32:45,380 - INFO - 127.0.0.1 - - [05/Jul/2025 22:32:45] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 22:32:45,384 - INFO - 127.0.0.1 - - [05/Jul/2025 22:32:45] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 22:32:49,111 - INFO - 127.0.0.1 - - [05/Jul/2025 22:32:49] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 22:32:49,139 - INFO - 127.0.0.1 - - [05/Jul/2025 22:32:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:32:49,164 - INFO - 127.0.0.1 - - [05/Jul/2025 22:32:49] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 22:32:49,166 - INFO - 127.0.0.1 - - [05/Jul/2025 22:32:49] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 22:36:04,676 - INFO - 127.0.0.1 - - [05/Jul/2025 22:36:04] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 22:36:04,703 - INFO - 127.0.0.1 - - [05/Jul/2025 22:36:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:36:04,801 - INFO - 127.0.0.1 - - [05/Jul/2025 22:36:04] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 22:36:04,806 - INFO - 127.0.0.1 - - [05/Jul/2025 22:36:04] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 22:39:28,721 - INFO - 127.0.0.1 - - [05/Jul/2025 22:39:28] "GET /profile HTTP/1.1" 200 -
+2025-07-05 22:39:28,806 - INFO - 127.0.0.1 - - [05/Jul/2025 22:39:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:39:28,854 - INFO - 127.0.0.1 - - [05/Jul/2025 22:39:28] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 22:39:39,590 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-05 22:39:39,592 - INFO - 127.0.0.1 - - [05/Jul/2025 22:39:39] "POST /logout HTTP/1.1" 200 -
+2025-07-05 22:39:39,679 - INFO - 127.0.0.1 - - [05/Jul/2025 22:39:39] "GET / HTTP/1.1" 200 -
+2025-07-05 22:39:39,707 - INFO - 127.0.0.1 - - [05/Jul/2025 22:39:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:39:39,710 - INFO - 127.0.0.1 - - [05/Jul/2025 22:39:39] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 22:39:44,022 - INFO - 127.0.0.1 - - [05/Jul/2025 22:39:44] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-05 22:39:50,826 - WARNING - Security Event - LOGIN_FAILED: 127.0.0.1 - Wrong password for: admin
+2025-07-05 22:39:50,828 - INFO - 127.0.0.1 - - [05/Jul/2025 22:39:50] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-07-05 22:40:03,514 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-05 22:40:03,516 - INFO - 127.0.0.1 - - [05/Jul/2025 22:40:03] "POST /login HTTP/1.1" 200 -
+2025-07-05 22:40:03,539 - INFO - 127.0.0.1 - - [05/Jul/2025 22:40:03] "GET /profile HTTP/1.1" 200 -
+2025-07-05 22:40:03,570 - INFO - 127.0.0.1 - - [05/Jul/2025 22:40:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:40:03,571 - INFO - 127.0.0.1 - - [05/Jul/2025 22:40:03] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 22:40:06,148 - INFO - 127.0.0.1 - - [05/Jul/2025 22:40:06] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 22:40:06,174 - INFO - 127.0.0.1 - - [05/Jul/2025 22:40:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 22:40:06,242 - INFO - 127.0.0.1 - - [05/Jul/2025 22:40:06] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 22:40:06,271 - INFO - 127.0.0.1 - - [05/Jul/2025 22:40:06] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 22:51:03,216 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-05 22:51:03,421 - INFO -  * Restarting with stat
+2025-07-05 23:03:03,749 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-05 23:03:03,772 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-05 23:03:03,776 - INFO -  * Restarting with stat
+2025-07-05 23:03:04,792 - WARNING -  * Debugger is active!
+2025-07-05 23:03:04,805 - INFO -  * Debugger PIN: 438-468-350
+2025-07-05 23:03:08,615 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:08] "[31m[1mPOST /logout HTTP/1.1[0m" 401 -
+2025-07-05 23:03:08,656 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:08] "GET / HTTP/1.1" 200 -
+2025-07-05 23:03:08,767 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 23:03:08,772 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:08] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,149 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "GET / HTTP/1.1" 200 -
+2025-07-05 23:03:11,185 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,186 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,309 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "GET / HTTP/1.1" 200 -
+2025-07-05 23:03:11,343 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,344 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,457 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "GET / HTTP/1.1" 200 -
+2025-07-05 23:03:11,494 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,495 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,604 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "GET / HTTP/1.1" 200 -
+2025-07-05 23:03:11,635 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,637 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,823 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "GET / HTTP/1.1" 200 -
+2025-07-05 23:03:11,845 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 23:03:11,847 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 23:03:31,321 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username
+2025-07-05 23:03:36,734 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:36] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2025-07-05 23:03:36,765 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:36] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-05 23:03:36,812 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:36] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-05 23:03:40,720 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:40] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-05 23:03:40,746 - ERROR - Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d2e1a72fcca58-74ce4180970sm4884948b3a.93 - gsmtp')
+2025-07-05 23:03:40,748 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-05 23:03:40,752 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:40] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-05 23:03:43,426 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:43] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-05 23:03:43,452 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:43] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-05 23:03:50,405 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:50] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-05 23:03:50,439 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:50] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-05 23:03:54,741 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:54] "[31m[1mPOST /logout HTTP/1.1[0m" 403 -
+2025-07-05 23:03:54,773 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:54] "[31m[1mGET / HTTP/1.1[0m" 403 -
+2025-07-05 23:03:54,818 - INFO - 127.0.0.1 - - [05/Jul/2025 23:03:54] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-05 23:10:54,484 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-05 23:10:54,670 - INFO -  * Restarting with stat
+2025-07-05 23:10:55,804 - WARNING -  * Debugger is active!
+2025-07-05 23:10:55,812 - INFO -  * Debugger PIN: 438-468-350
+2025-07-05 23:11:58,540 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-05 23:11:58,681 - INFO -  * Restarting with stat
+2025-07-05 23:11:59,796 - WARNING -  * Debugger is active!
+2025-07-05 23:11:59,803 - INFO -  * Debugger PIN: 438-468-350
+2025-07-05 23:13:11,755 - INFO -  * Detected change in 'D:\\SQLI\\app.py', reloading
+2025-07-05 23:13:11,883 - INFO -  * Restarting with stat
+2025-07-05 23:13:12,986 - WARNING -  * Debugger is active!
+2025-07-05 23:13:12,996 - INFO -  * Debugger PIN: 438-468-350
+2025-07-05 23:13:16,675 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:16] "GET / HTTP/1.1" 200 -
+2025-07-05 23:13:16,795 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:16] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-05 23:13:16,796 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:16] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 23:13:23,261 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:23] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -
+2025-07-05 23:13:47,467 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-05 23:13:47,470 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:47] "POST /login HTTP/1.1" 200 -
+2025-07-05 23:13:47,502 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:47] "GET /profile HTTP/1.1" 200 -
+2025-07-05 23:13:47,535 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 23:13:47,540 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 23:13:50,445 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:50] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-05 23:13:50,474 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 23:13:50,527 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:50] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-05 23:13:50,558 - INFO - 127.0.0.1 - - [05/Jul/2025 23:13:50] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-05 23:14:14,557 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-05 23:14:14,558 - INFO - 127.0.0.1 - - [05/Jul/2025 23:14:14] "POST /logout HTTP/1.1" 200 -
+2025-07-05 23:14:14,588 - INFO - 127.0.0.1 - - [05/Jul/2025 23:14:14] "GET / HTTP/1.1" 200 -
+2025-07-05 23:14:14,626 - INFO - 127.0.0.1 - - [05/Jul/2025 23:14:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-05 23:14:14,636 - INFO - 127.0.0.1 - - [05/Jul/2025 23:14:14] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-05 23:14:19,322 - INFO - 127.0.0.1 - - [05/Jul/2025 23:14:19] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 401 -

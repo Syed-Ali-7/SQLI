@@ -1,104 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/style.css" />
     <style>
-        body {
-            background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-        }
-        .dashboard-container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-        }
-        .dashboard-section {
-            background-color: var(--white-color);
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-        h2 {
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--light-gray-color);
-            padding-bottom: 0.5rem;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 12px 15px;
-            border: 1px solid var(--light-gray-color);
-            text-align: left;
-        }
-        th {
-            background-color: #f7f7f7;
-            font-weight: 600;
-        }
-        tr:nth-child(even) {
-            background-color: #fafafa;
-        }
+      body {
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      }
+      .measures-content{
+        background-color: var(--white-color);
+        padding: 1rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .dashboard-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+      }
+      .dashboard-section {
+        background-color: var(--white-color);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      h2,
+      h1 {
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid var(--light-gray-color);
+        padding-bottom: 0.5rem;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 12px 15px;
+        border: 1px solid var(--light-gray-color);
+        text-align: left;
+      }
+      th {
+        background-color: #f7f7f7;
+        font-weight: 600;
+      }
+      tr:nth-child(even) {
+        background-color: #fafafa;
+      }
+      canvas {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+
+      .measures-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .measure-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .measure-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      }
+
+      .measure-icon {
+        font-size: 2rem;
+        margin-right: 1rem;
+      }
+
+      .measure-text h3 {
+        margin: 0 0 0.5rem 0;
+        color: var(--primary-color);
+      }
+
+      .measure-text p {
+        margin: 0;
+        color: #666;
+      }
     </style>
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1>Admin SQL Injection Dashboard</h1>
+    <div class="dashboard-section" style="grid-column: 1 / -1">
+      <h2>SQL Injection Preventive Measures</h2>
+      <div id="measures-content">
+        <div class="measures-grid">
+          <div class="measure-card">
+            <div class="measure-icon">🛡️</div>
+            <div class="measure-text">
+              <h3>Parameterized Queries</h3>
+              <p>Use prepared statements to separate SQL code from user-provided data, preventing malicious injection.</p>
+            </div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-icon">🔒</div>
+            <div class="measure-text">
+              <h3>Input Validation</h3>
+              <p>Strictly validate and sanitize all user inputs to ensure they conform to expected formats and values.</p>
+            </div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-icon">🔥</div>
+            <div class="measure-text">
+              <h3>Web Application Firewall (WAF)</h3>
+              <p>Deploy a WAF to filter and block malicious traffic, including common SQL injection patterns.</p>
+            </div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-icon">🔄</div>
+            <div class="measure-text">
+              <h3>Regular Updates</h3>
+              <p>Keep all database systems, libraries, and frameworks patched and up-to-date to protect against known vulnerabilities.</p>
+            </div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-icon">🕵️</div>
+            <div class="measure-text">
+              <h3>Security Audits</h3>
+              <p>Conduct regular penetration testing and code reviews to proactively identify and fix security weaknesses.</p>
+            </div>
+          </div>
+          <div class="measure-card">
+            <div class="measure-icon">🎓</div>
+            <div class="measure-text">
+              <h3>Developer Training</h3>
+              <p>Educate developers on secure coding practices and the latest SQL injection threats and countermeasures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="dashboard-container">
-        <div class="dashboard-section">
-            <h2>Blocked IPs</h2>
-            <div id="blocked-ips-content"></div>
-        </div>
-        <div class="dashboard-section">
-            <h2>Security Events</h2>
-            <div id="security-events-content"></div>
-        </div>
+      <div class="dashboard-section">
+        <h2>Security Event Types</h2>
+        <canvas id="event-types-chart"></canvas>
+      </div>
+      <div class="dashboard-section">
+        <h2>Blocked IPs</h2>
+        <div id="blocked-ips-content"></div>
+      </div>
+      <div class="dashboard-section" style="grid-column: 1 / -1">
+        <h2>Security Events</h2>
+        <div id="security-events-content"></div>
+      </div>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Fetch and display blocked IPs
-            fetch('/admin/blocked-ips')
-                .then(response => response.json())
-                .then(data => {
-                    const container = document.getElementById('blocked-ips-content');
-                    if (data.blocked_ips && data.blocked_ips.length > 0) {
-                        const list = document.createElement('ul');
-                        data.blocked_ips.forEach(ip => {
-                            const item = document.createElement('li');
-                            item.textContent = ip;
-                            list.appendChild(item);
-                        });
-                        container.appendChild(list);
-                    } else {
-                        container.textContent = 'No IPs are currently blocked.';
-                    }
-                });
+      document.addEventListener("DOMContentLoaded", () => {
+        // Fetch and display blocked IPs
+        fetch("/admin/blocked-ips")
+          .then((response) => response.json())
+          .then((data) => {
+            const container = document.getElementById("blocked-ips-content");
+            if (data.blocked_ips && data.blocked_ips.length > 0) {
+              const list = document.createElement("ul");
+              data.blocked_ips.forEach((ip) => {
+                const item = document.createElement("li");
+                item.textContent = ip;
+                list.appendChild(item);
+              });
+              container.appendChild(list);
+            } else {
+              container.textContent = "No IPs are currently blocked.";
+            }
+          });
 
-            // Fetch and display security events
-            fetch('/admin/security-events')
-                .then(response => response.json())
-                .then(data => {
-                    const container = document.getElementById('security-events-content');
-                    if (data.events && data.events.length > 0) {
-                        const table = document.createElement('table');
-                        table.innerHTML = `<thead><tr><th>Timestamp</th><th>IP</th><th>Event</th><th>Details</th></tr></thead>`;
-                        const tbody = document.createElement('tbody');
-                        data.events.reverse().forEach(event => {
-                            const row = document.createElement('tr');
-                            row.innerHTML = `<td>${new Date(event.timestamp).toLocaleString()}</td><td>${event.ip}</td><td>${event.event_type}</td><td>${event.details}</td>`;
-                            tbody.appendChild(row);
-                        });
-                        table.appendChild(tbody);
-                        container.appendChild(table);
-                    } else {
-                        container.textContent = 'No security events recorded.';
-                    }
+        // Fetch and display security events
+        fetch("/admin/security-events")
+          .then((response) => response.json())
+          .then((data) => {
+            const events = data.events || [];
+            const container = document.getElementById(
+              "security-events-content"
+            );
+
+            if (events.length > 0) {
+              const table = document.createElement("table");
+              table.innerHTML = `<thead><tr><th>Timestamp</th><th>IP</th><th>Event</th><th>Details</th></tr></thead>`;
+              const tbody = document.createElement("tbody");
+              events
+                .slice()
+                .reverse()
+                .forEach((event) => {
+                  const row = document.createElement("tr");
+                  row.innerHTML = `<td>${new Date(
+                    event.timestamp
+                  ).toLocaleString()}</td><td>${event.ip}</td><td>${
+                    event.event_type
+                  }</td><td>${event.details}</td>`;
+                  tbody.appendChild(row);
                 });
-        });
+              table.appendChild(tbody);
+              container.appendChild(table);
+
+              // Process data for chart
+              const eventCounts = events.reduce((acc, event) => {
+                acc[event.event_type] = (acc[event.event_type] || 0) + 1;
+                return acc;
+              }, {});
+
+              const chartLabels = Object.keys(eventCounts);
+              const chartData = Object.values(eventCounts);
+
+              // Create chart
+              const ctx = document
+                .getElementById("event-types-chart")
+                .getContext("2d");
+              new Chart(ctx, {
+                type: "bar",
+                data: {
+                  labels: chartLabels,
+                  datasets: [
+                    {
+                      label: "Number of Events",
+                      data: chartData,
+                      backgroundColor: "rgba(54, 162, 235, 0.6)",
+                      borderColor: "rgba(54, 162, 235, 1)",
+                      borderWidth: 1,
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                    },
+                  },
+                },
+              });
+            } else {
+              container.textContent = "No security events recorded.";
+            }
+          });
+      });
     </script>
-</body>
+  </body>
 </html>
