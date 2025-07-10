@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 import sqlite3
 import os
-#import bcrypt
 import secrets
 import re
 from functools import wraps
@@ -11,7 +10,9 @@ import logging
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-from middleware import SQLI_PATTERNS
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 # Configure logging
 logging.basicConfig(
@@ -22,6 +23,42 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
+
+# Email Configuration
+SMTP_SERVER = 'smtp.gmail.com'
+SMTP_PORT = 465
+EMAIL_USER = 'saimatasneem006@gmail.com'
+EMAIL_PASSWORD = 'rrbp wlty dhrr scte'  # Use app-specific password
+ADMIN_EMAIL = 'saimatasneem006@gmail.com'
+
+# SQL Injection Patterns
+SQLI_PATTERNS = [
+    r"(\%27)|(\')|(\-\-)",
+    r"((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))",
+    r"\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))",
+    r"((\%27)|(\'))union",
+    r"exec(\s|\+)+(s|x)p\w+",
+    r"insert(\s|\+)+into",
+    r"select(\s|\+)+from",
+    r"delete(\s|\+)+from",
+    r"update(\s|\+)+set",
+    r"drop(\s|\+)+table",
+    r"truncate(\s|\+)+table",
+    r"create(\s|\+)+table",
+    r"alter(\s|\+)+table",
+    r"1=1",
+    r"1\s*=\s*1",
+    r"\' OR \'1\'=\'1",
+    r"\" OR \"1\"=\"1",
+    r"OR 1=1",
+    r"AND 1=1",
+    r"sleep\(\s*\d+\s*\)",
+    r"benchmark\(\s*\d+",
+    r"waitfor delay",
+    r"shutdown(\s|\+)+with(\s|\+)+nowait",
+    r"xp_cmdshell",
+    r"\/\*.*\*\/"
+]
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(32)  # Generate a secure secret key
@@ -36,6 +73,27 @@ limiter = Limiter(
     default_limits=["1000 per hour"]
 )
 
+def send_email(subject, body):
+    """Send email notification to admin"""
+    try:
+        # Create message
+        msg = MIMEMultipart()
+        msg['From'] = EMAIL_USER
+        msg['To'] = ADMIN_EMAIL
+        msg['Subject'] = subject
+        
+        # Add body to email
+        msg.attach(MIMEText(body, 'plain'))
+        
+        # Create SMTP session
+        with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
+            server.login(EMAIL_USER, EMAIL_PASSWORD)
+            server.send_message(msg)
+        
+        logging.info(f"Email notification sent: {subject}")
+    except Exception as e:
+        logging.error(f"Failed to send email notification: {e}")
+
 # Enhanced Security Middleware
 class SecurityMiddleware:
     def __init__(self, app):
@@ -43,8 +101,6 @@ class SecurityMiddleware:
         self.blocked_ips = set()
         self.failed_attempts = {}
         self.load_blocked_ips()
-        
-        # Enhanced SQL injection patterns from middleware.py
         self.sqli_patterns = SQLI_PATTERNS
     
     def load_blocked_ips(self):
@@ -105,6 +161,22 @@ class SecurityMiddleware:
         self.blocked_ips.add(ip)
         self.save_blocked_ips()
         self.log_security_event(ip, "IP_BLOCKED", reason)
+        
+        # Send email notification
+        subject = f"Security Alert: IP Blocked - {ip}"
+        body = f"""
+        Security Alert:
+        
+        An IP address has been blocked due to suspicious activity.
+        
+        Details:
+        - IP Address: {ip}
+        - Reason: {reason}
+        - Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+        
+        This is an automated notification from your security system.
+        """
+        send_email(subject, body)
     
     def check_rate_limit(self, ip):
         now = datetime.now()
@@ -231,7 +303,7 @@ def require_admin(f):
         if 'user_id' not in session:
             return jsonify({'error': 'Authentication required'}), 401
         
-        # Check if user is admin (you can implement proper role checking)
+        # Check if user is admin
         conn = sqlite3.connect('students.db')
         cursor = conn.cursor()
         cursor.execute("SELECT username FROM students WHERE id = ?", (session['user_id'],))
@@ -280,15 +352,6 @@ def security_check():
     if suspicious_data:
         reason = f"SQL injection attempt: {'; '.join(suspicious_data)}"
         security_middleware.block_ip(ip, reason)
-        html = """
-            <html>
-            <head><title>403 Forbidden</title></head>
-            <body>
-                <h2>🚫 Access Denied</h2>
-                <p>Your request was blocked due to suspicious SQL-like input.</p>
-            </body>
-            </html>
-            """
         return redirect(url_for('access_denied'))
 
 @app.route('/')
@@ -341,14 +404,13 @@ def login():
             security_middleware.log_security_event(ip, "LOGIN_FAILED", f"Username not found: {username}")
             return jsonify({'error': 'Invalid credentials'}), 401
         
-        # Check if user is active (handle case where is_active column might not exist)
+        # Check if user is active
         try:
             cursor.execute("SELECT is_active FROM students WHERE id = ?", (student[0],))
             active_result = cursor.fetchone()
             if active_result and not active_result[0]:
                 return jsonify({'error': 'Account is disabled'}), 401
         except sqlite3.OperationalError:
-            # is_active column doesn't exist, assume user is active
             pass
         
         # Verify password
@@ -360,15 +422,13 @@ def login():
             session.permanent = True
             app.permanent_session_lifetime = timedelta(hours=2)
             
-            # Update last login (handle case where last_login column might not exist)
+            # Update last login
             try:
                 cursor.execute(
                     "UPDATE students SET last_login = CURRENT_TIMESTAMP WHERE id = ?",
-                    (student[0],)
-                )
+                    (student[0],))
                 conn.commit()
             except sqlite3.OperationalError:
-                # last_login column doesn't exist, ignore
                 pass
             
             # Log successful login
@@ -439,7 +499,6 @@ def profile():
 def admin_dashboard():
     return render_template('admin_dashboard.html')
 
-# Secure admin endpoints
 @app.route('/admin/security-events')
 @require_admin
 def view_security_events():
@@ -453,7 +512,6 @@ def view_security_events():
                     except json.JSONDecodeError:
                         continue
         
-        # Return recent events (last 100)
         return jsonify({'events': events[-100:]})
     except Exception as e:
         logging.error(f"Error reading security events: {e}")
@@ -520,45 +578,6 @@ def reset_database():
             return jsonify({'error': f'Failed to reset database: {str(e)}'}), 500
     else:
         return jsonify({'error': 'Not available in production mode'}), 404
-
-@app.route('/debug/test-login', methods=['POST'])
-def test_login():
-    """Development endpoint to test login without security middleware"""
-    if not app.debug:
-        return jsonify({'error': 'Not available in production mode'}), 404
-    
-    data = request.get_json()
-    username = data.get('username')
-    password = data.get('password')
-    
-    conn = sqlite3.connect('students.db')
-    cursor = conn.cursor()
-    
-    try:
-        cursor.execute("SELECT * FROM students WHERE username = ?", (username,))
-        student = cursor.fetchone()
-        
-        if student:
-            # Check what columns exist
-            cursor.execute("PRAGMA table_info(students)")
-            columns = [col[1] for col in cursor.fetchall()]
-            
-            return jsonify({
-                'user_found': True,
-                'columns': columns,
-                'user_data': {
-                    'id': student[0],
-                    'username': student[1],
-                    'has_password_hash': len(student) > 2 and 'password_hash' in columns,
-                    'password_hash_preview': student[2][:20] + '...' if len(student) > 2 else 'N/A'
-                }
-            })
-        else:
-            return jsonify({'user_found': False})
-    except Exception as e:
-        return jsonify({'error': str(e)})
-    finally:
-        conn.close()
 
 if __name__ == '__main__':
     init_db()

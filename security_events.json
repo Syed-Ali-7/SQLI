@@ -116,3 +116,9 @@
 {"timestamp": "2025-07-05T23:03:31.320543", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; -- for username"}
 {"timestamp": "2025-07-05T23:13:47.466483", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
 {"timestamp": "2025-07-05T23:14:14.555057", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-10T22:45:05.182469", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-10T22:46:30.589819", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-10T23:12:21.395445", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Wrong password for: admin"}
+{"timestamp": "2025-07-10T23:12:27.881506", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-10T23:12:56.381806", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-10T23:13:02.623707", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username= ' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; --"}
