@@ -1667,3 +1667,164 @@
 2025-07-10 23:24:37,522 - INFO - 127.0.0.1 - - [10/Jul/2025 23:24:37] "GET /static/style.css HTTP/1.1" 200 -
 2025-07-10 23:24:37,531 - INFO - 127.0.0.1 - - [10/Jul/2025 23:24:37] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
 2025-07-10 23:24:37,601 - INFO - 127.0.0.1 - - [10/Jul/2025 23:24:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-11 00:16:42,536 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-11 00:16:42,536 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 00:16:42,539 - INFO -  * Restarting with stat
+2025-07-11 00:16:43,154 - WARNING -  * Debugger is active!
+2025-07-11 00:16:43,160 - INFO -  * Debugger PIN: 568-880-480
+2025-07-11 00:16:55,244 - INFO - 127.0.0.1 - - [11/Jul/2025 00:16:55] "GET / HTTP/1.1" 200 -
+2025-07-11 00:16:55,496 - INFO - 127.0.0.1 - - [11/Jul/2025 00:16:55] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 00:16:55,498 - INFO - 127.0.0.1 - - [11/Jul/2025 00:16:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:16:55,598 - INFO - 127.0.0.1 - - [11/Jul/2025 00:16:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-11 00:17:27,402 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: john_doe
+2025-07-11 00:17:27,405 - INFO - 127.0.0.1 - - [11/Jul/2025 00:17:27] "POST /login HTTP/1.1" 200 -
+2025-07-11 00:17:27,439 - INFO - 127.0.0.1 - - [11/Jul/2025 00:17:27] "GET /profile HTTP/1.1" 200 -
+2025-07-11 00:17:27,485 - INFO - 127.0.0.1 - - [11/Jul/2025 00:17:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:17:27,486 - INFO - 127.0.0.1 - - [11/Jul/2025 00:17:27] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 00:17:38,010 - INFO - 127.0.0.1 - - [11/Jul/2025 00:17:38] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-11 00:18:10,994 - INFO - 127.0.0.1 - - [11/Jul/2025 00:18:10] "[33mGET /admin/login HTTP/1.1[0m" 404 -
+2025-07-11 00:27:35,743 - INFO -  * Detected change in 'C:\\Users\\Say12\\SQLI\\app.py', reloading
+2025-07-11 00:27:35,845 - INFO -  * Restarting with stat
+2025-07-11 00:27:36,704 - WARNING -  * Debugger is active!
+2025-07-11 00:27:36,707 - INFO -  * Debugger PIN: 568-880-480
+2025-07-11 00:27:49,262 - INFO - 127.0.0.1 - - [11/Jul/2025 00:27:49] "GET / HTTP/1.1" 200 -
+2025-07-11 00:27:49,411 - INFO - 127.0.0.1 - - [11/Jul/2025 00:27:49] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 00:27:49,412 - INFO - 127.0.0.1 - - [11/Jul/2025 00:27:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:29:06,964 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: john_doe
+2025-07-11 00:29:06,965 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:06] "POST /login HTTP/1.1" 200 -
+2025-07-11 00:29:06,994 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:06] "GET /profile HTTP/1.1" 200 -
+2025-07-11 00:29:07,037 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:29:07,038 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:07] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 00:29:21,229 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:21] "GET /admin/login HTTP/1.1" 200 -
+2025-07-11 00:29:28,213 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:28] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2025-07-11 00:29:28,269 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:28] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-11 00:29:28,322 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:29:28,525 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:28] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-11 00:29:28,573 - INFO - 127.0.0.1 - - [11/Jul/2025 00:29:28] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-11 00:30:21,739 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:21] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2025-07-11 00:30:21,761 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:21] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-11 00:30:21,836 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:30:21,852 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:21] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-11 00:30:21,856 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:21] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-11 00:30:26,211 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: john_doe
+2025-07-11 00:30:26,213 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:26] "POST /logout HTTP/1.1" 200 -
+2025-07-11 00:30:26,279 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:26] "GET / HTTP/1.1" 200 -
+2025-07-11 00:30:26,356 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:30:26,360 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:26] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 00:30:32,681 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username= ' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; --
+2025-07-11 00:30:37,336 - INFO - Email notification sent: Security Alert: IP Blocked - 127.0.0.1
+2025-07-11 00:30:37,338 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-11 00:30:37,360 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:37] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-11 00:30:37,429 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:37] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-11 00:30:37,499 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:37] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-11 00:30:45,884 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:45] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-11 00:30:45,947 - INFO - 127.0.0.1 - - [11/Jul/2025 00:30:45] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-11 00:37:21,052 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-11 00:37:21,053 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 00:37:21,055 - INFO -  * Restarting with stat
+2025-07-11 00:37:21,644 - WARNING -  * Debugger is active!
+2025-07-11 00:37:21,647 - INFO -  * Debugger PIN: 568-880-480
+2025-07-11 00:37:37,249 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:37] "GET / HTTP/1.1" 200 -
+2025-07-11 00:37:37,448 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:37] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 00:37:37,449 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:37] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-11 00:37:53,959 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-11 00:37:53,963 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:53] "POST /login HTTP/1.1" 200 -
+2025-07-11 00:37:53,999 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:53] "GET /profile HTTP/1.1" 200 -
+2025-07-11 00:37:54,042 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:37:54,047 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:54] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 00:37:57,374 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-11 00:37:57,376 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:57] "POST /logout HTTP/1.1" 200 -
+2025-07-11 00:37:57,426 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:57] "GET / HTTP/1.1" 200 -
+2025-07-11 00:37:57,471 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:37:57,475 - INFO - 127.0.0.1 - - [11/Jul/2025 00:37:57] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 00:38:12,042 - INFO -  * Detected change in 'C:\\Users\\Say12\\SQLI\\app.py', reloading
+2025-07-11 00:38:12,172 - INFO -  * Restarting with stat
+2025-07-11 00:38:12,832 - WARNING -  * Debugger is active!
+2025-07-11 00:38:12,836 - INFO -  * Debugger PIN: 568-880-480
+2025-07-11 00:47:28,613 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-11 00:47:28,613 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 00:47:28,615 - INFO -  * Restarting with stat
+2025-07-11 00:47:29,283 - WARNING -  * Debugger is active!
+2025-07-11 00:47:29,293 - INFO -  * Debugger PIN: 568-880-480
+2025-07-11 00:47:36,553 - INFO - 127.0.0.1 - - [11/Jul/2025 00:47:36] "GET / HTTP/1.1" 200 -
+2025-07-11 00:47:37,128 - INFO - 127.0.0.1 - - [11/Jul/2025 00:47:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 00:47:37,141 - INFO - 127.0.0.1 - - [11/Jul/2025 00:47:37] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 00:47:37,197 - INFO - 127.0.0.1 - - [11/Jul/2025 00:47:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-11 00:47:42,695 - INFO - 127.0.0.1 - - [11/Jul/2025 00:47:42] "GET /admin/login HTTP/1.1" 200 -
+2025-07-11 00:47:51,539 - INFO -  * Detected change in 'C:\\Users\\Say12\\SQLI\\app.py', reloading
+2025-07-11 00:47:51,660 - INFO -  * Restarting with stat
+2025-07-11 00:47:52,358 - WARNING -  * Debugger is active!
+2025-07-11 00:47:52,364 - INFO -  * Debugger PIN: 568-880-480
+2025-07-11 18:28:05,718 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-11 18:28:05,720 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 18:28:05,723 - INFO -  * Restarting with stat
+2025-07-11 18:28:06,205 - WARNING -  * Debugger is active!
+2025-07-11 18:28:06,211 - INFO -  * Debugger PIN: 568-880-480
+2025-07-11 18:28:27,213 - INFO - 127.0.0.1 - - [11/Jul/2025 18:28:27] "GET / HTTP/1.1" 200 -
+2025-07-11 18:28:27,393 - INFO - 127.0.0.1 - - [11/Jul/2025 18:28:27] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:28:27,394 - INFO - 127.0.0.1 - - [11/Jul/2025 18:28:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 18:28:27,458 - INFO - 127.0.0.1 - - [11/Jul/2025 18:28:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-11 18:28:50,008 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: john_doe
+2025-07-11 18:28:50,010 - INFO - 127.0.0.1 - - [11/Jul/2025 18:28:50] "POST /login HTTP/1.1" 200 -
+2025-07-11 18:28:50,045 - INFO - 127.0.0.1 - - [11/Jul/2025 18:28:50] "GET /profile HTTP/1.1" 200 -
+2025-07-11 18:28:50,087 - INFO - 127.0.0.1 - - [11/Jul/2025 18:28:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 18:28:50,088 - INFO - 127.0.0.1 - - [11/Jul/2025 18:28:50] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 18:29:04,443 - INFO - 127.0.0.1 - - [11/Jul/2025 18:29:04] "GET /admin/login HTTP/1.1" 200 -
+2025-07-11 18:51:08,690 - INFO - 127.0.0.1 - - [11/Jul/2025 18:51:08] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2025-07-11 18:51:08,850 - INFO - 127.0.0.1 - - [11/Jul/2025 18:51:08] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-11 18:51:09,089 - INFO - 127.0.0.1 - - [11/Jul/2025 18:51:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 18:51:10,154 - INFO - 127.0.0.1 - - [11/Jul/2025 18:51:10] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-11 18:51:10,284 - INFO - 127.0.0.1 - - [11/Jul/2025 18:51:10] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-11 19:10:18,915 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-11 19:10:18,915 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 19:10:18,931 - INFO -  * Restarting with stat
+2025-07-11 19:10:19,498 - WARNING -  * Debugger is active!
+2025-07-11 19:10:19,514 - INFO -  * Debugger PIN: 568-880-480
+2025-07-11 19:10:39,301 - INFO - 127.0.0.1 - - [11/Jul/2025 19:10:39] "GET / HTTP/1.1" 200 -
+2025-07-11 19:10:39,452 - INFO - 127.0.0.1 - - [11/Jul/2025 19:10:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 19:10:39,595 - INFO - 127.0.0.1 - - [11/Jul/2025 19:10:39] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 19:10:39,620 - INFO - 127.0.0.1 - - [11/Jul/2025 19:10:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-11 19:11:49,607 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: john_doe
+2025-07-11 19:11:49,608 - INFO - 127.0.0.1 - - [11/Jul/2025 19:11:49] "POST /login HTTP/1.1" 200 -
+2025-07-11 19:11:49,725 - INFO - 127.0.0.1 - - [11/Jul/2025 19:11:49] "GET /profile HTTP/1.1" 200 -
+2025-07-11 19:11:49,777 - INFO - 127.0.0.1 - - [11/Jul/2025 19:11:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 19:11:49,778 - INFO - 127.0.0.1 - - [11/Jul/2025 19:11:49] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 19:11:59,167 - INFO - 127.0.0.1 - - [11/Jul/2025 19:11:59] "GET /admin/login HTTP/1.1" 200 -
+2025-07-11 20:24:17,775 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-11 20:24:17,775 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-11 20:24:17,778 - INFO -  * Restarting with stat
+2025-07-11 20:24:18,348 - WARNING -  * Debugger is active!
+2025-07-11 20:24:18,354 - INFO -  * Debugger PIN: 568-880-480
+2025-07-11 20:24:25,411 - INFO - 127.0.0.1 - - [11/Jul/2025 20:24:25] "GET / HTTP/1.1" 200 -
+2025-07-11 20:24:25,570 - INFO - 127.0.0.1 - - [11/Jul/2025 20:24:25] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 20:24:25,572 - INFO - 127.0.0.1 - - [11/Jul/2025 20:24:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 20:24:43,892 - WARNING - Security Event - LOGIN_SUCCESS: 127.0.0.1 - User: admin
+2025-07-11 20:24:43,894 - INFO - 127.0.0.1 - - [11/Jul/2025 20:24:43] "POST /login HTTP/1.1" 200 -
+2025-07-11 20:24:43,931 - INFO - 127.0.0.1 - - [11/Jul/2025 20:24:43] "GET /profile HTTP/1.1" 200 -
+2025-07-11 20:24:43,975 - INFO - 127.0.0.1 - - [11/Jul/2025 20:24:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 20:24:43,977 - INFO - 127.0.0.1 - - [11/Jul/2025 20:24:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 20:25:31,297 - INFO - 127.0.0.1 - - [11/Jul/2025 20:25:31] "[31m[1mPOST /admin/login HTTP/1.1[0m" 401 -
+2025-07-11 20:25:58,931 - INFO - 127.0.0.1 - - [11/Jul/2025 20:25:58] "[32mPOST /admin/login HTTP/1.1[0m" 302 -
+2025-07-11 20:25:58,970 - INFO - 127.0.0.1 - - [11/Jul/2025 20:25:58] "GET /admin/dashboard HTTP/1.1" 200 -
+2025-07-11 20:25:59,101 - INFO - 127.0.0.1 - - [11/Jul/2025 20:25:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 20:25:59,341 - INFO - 127.0.0.1 - - [11/Jul/2025 20:25:59] "GET /admin/blocked-ips HTTP/1.1" 200 -
+2025-07-11 20:25:59,372 - INFO - 127.0.0.1 - - [11/Jul/2025 20:25:59] "GET /admin/security-events HTTP/1.1" 200 -
+2025-07-11 20:26:18,603 - WARNING - Security Event - LOGOUT: 127.0.0.1 - User: admin
+2025-07-11 20:26:18,605 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:18] "POST /logout HTTP/1.1" 200 -
+2025-07-11 20:26:18,655 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:18] "GET / HTTP/1.1" 200 -
+2025-07-11 20:26:18,702 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-11 20:26:18,702 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-07-11 20:26:27,427 - WARNING - Security Event - IP_BLOCKED: 127.0.0.1 - SQL injection attempt: username= ' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; --
+2025-07-11 20:26:30,580 - INFO - Email notification sent: Security Alert: IP Blocked - 127.0.0.1
+2025-07-11 20:26:30,581 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-11 20:26:30,619 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:30] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-11 20:26:30,647 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:30] "[31m[1mGET /access-denied HTTP/1.1[0m" 403 -
+2025-07-11 20:26:30,766 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:30] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -
+2025-07-11 20:26:36,298 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:36] "[31m[1mGET /admin/dashboard HTTP/1.1[0m" 403 -
+2025-07-11 20:26:36,378 - INFO - 127.0.0.1 - - [11/Jul/2025 20:26:36] "[31m[1mGET /static/style.css HTTP/1.1[0m" 403 -

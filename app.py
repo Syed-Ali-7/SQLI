@@ -61,7 +61,7 @@ SQLI_PATTERNS = [
 ]
 
 app = Flask(__name__)
-app.secret_key = secrets.token_hex(32)  # Generate a secure secret key
+app.secret_key = secrets.token_hex(32)
 app.config['SESSION_COOKIE_SECURE'] = True
 app.config['SESSION_COOKIE_HTTPONLY'] = True
 app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
@@ -74,27 +74,19 @@ limiter = Limiter(
 )
 
 def send_email(subject, body):
-    """Send email notification to admin"""
     try:
-        # Create message
         msg = MIMEMultipart()
         msg['From'] = EMAIL_USER
         msg['To'] = ADMIN_EMAIL
         msg['Subject'] = subject
-        
-        # Add body to email
         msg.attach(MIMEText(body, 'plain'))
-        
-        # Create SMTP session
         with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
             server.login(EMAIL_USER, EMAIL_PASSWORD)
             server.send_message(msg)
-        
         logging.info(f"Email notification sent: {subject}")
     except Exception as e:
         logging.error(f"Failed to send email notification: {e}")
 
-# Enhanced Security Middleware
 class SecurityMiddleware:
     def __init__(self, app):
         self.app = app
@@ -122,18 +114,14 @@ class SecurityMiddleware:
     def detect_sqli(self, value):
         if not isinstance(value, str):
             value = str(value)
-        
-        # Decode common encodings
-        import urllib.parse
         try:
+            import urllib.parse
             decoded = urllib.parse.unquote(value)
-            # Check both original and decoded
             for pattern in self.sqli_patterns:
                 if re.search(pattern, value) or re.search(pattern, decoded):
                     return True
         except:
             pass
-        
         return False
     
     def log_security_event(self, ip, event_type, details):
@@ -143,15 +131,11 @@ class SecurityMiddleware:
             "event_type": event_type,
             "details": details
         }
-        
-        # Log to file
         try:
             with open("security_events.json", "a") as f:
                 f.write(json.dumps(event) + "\n")
         except Exception as e:
             logging.error(f"Error logging security event: {e}")
-        
-        # Log to application logger
         logging.warning(f"Security Event - {event_type}: {ip} - {details}")
     
     def is_blocked(self, ip):
@@ -161,20 +145,14 @@ class SecurityMiddleware:
         self.blocked_ips.add(ip)
         self.save_blocked_ips()
         self.log_security_event(ip, "IP_BLOCKED", reason)
-        
-        # Send email notification
         subject = f"Security Alert: IP Blocked - {ip}"
         body = f"""
         Security Alert:
-        
         An IP address has been blocked due to suspicious activity.
-        
         Details:
         - IP Address: {ip}
         - Reason: {reason}
         - Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-        
-        This is an automated notification from your security system.
         """
         send_email(subject, body)
     
@@ -182,17 +160,12 @@ class SecurityMiddleware:
         now = datetime.now()
         if ip not in self.failed_attempts:
             self.failed_attempts[ip] = []
-        
-        # Clean old attempts (older than 1 hour)
         self.failed_attempts[ip] = [
             attempt for attempt in self.failed_attempts[ip]
             if now - attempt < timedelta(hours=1)
         ]
-        
-        # Check if too many recent attempts
-        if len(self.failed_attempts[ip]) >= 10:  # 10 attempts per hour
+        if len(self.failed_attempts[ip]) >= 10:
             return False
-        
         return True
     
     def record_failed_attempt(self, ip):
@@ -200,20 +173,15 @@ class SecurityMiddleware:
             self.failed_attempts[ip] = []
         self.failed_attempts[ip].append(datetime.now())
 
-# Initialize middleware
 security_middleware = SecurityMiddleware(app)
 
-# Database initialization with secure password hashing
 def init_db():
     conn = sqlite3.connect('students.db')
     cursor = conn.cursor()
-    
-    # Check if students table exists
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='students'")
     table_exists = cursor.fetchone()
     
     if not table_exists:
-        # Create students table with hashed passwords
         cursor.execute('''
         CREATE TABLE students (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -229,7 +197,6 @@ def init_db():
         )
         ''')
         
-        # Create sessions table
         cursor.execute('''
         CREATE TABLE sessions (
             id TEXT PRIMARY KEY,
@@ -241,7 +208,6 @@ def init_db():
         )
         ''')
         
-        # Insert sample data with hashed passwords
         students = [
             ('john_doe', generate_password_hash('SecurePass123!'), 'John Doe', 'john@university.edu', 'Computer Science', 3.8),
             ('jane_smith', generate_password_hash('StrongPass456!'), 'Jane Smith', 'jane@university.edu', 'Biology', 3.9),
@@ -253,46 +219,30 @@ def init_db():
         INSERT INTO students (username, password_hash, name, email, major, gpa)
         VALUES (?, ?, ?, ?, ?, ?)
         ''', students)
-        
         conn.commit()
         print("Database initialized with sample data")
-        print("Test credentials:")
-        print("- admin / Admin@pass2025")
-        print("- john_doe / SecurePass123!")
     else:
-        # Check if we need to migrate from old schema (plain text passwords)
         cursor.execute("PRAGMA table_info(students)")
         columns = [column[1] for column in cursor.fetchall()]
-        
         if 'password' in columns and 'password_hash' not in columns:
-            print("Migrating database from plain text passwords to hashed passwords...")
-            
-            # Add new column
+            print("Migrating database...")
             cursor.execute("ALTER TABLE students ADD COLUMN password_hash TEXT")
-            
-            # Get all users with plain text passwords
             cursor.execute("SELECT id, password FROM students")
             users = cursor.fetchall()
-            
-            # Hash existing passwords
             for user_id, plain_password in users:
                 hashed_password = generate_password_hash(plain_password)
                 cursor.execute("UPDATE students SET password_hash = ? WHERE id = ?", 
                              (hashed_password, user_id))
-            
-            # Add is_active column if it doesn't exist
             if 'is_active' not in columns:
                 cursor.execute("ALTER TABLE students ADD COLUMN is_active BOOLEAN DEFAULT 1")
-            
             conn.commit()
-            print("Migration completed. Old passwords have been hashed.")
-    
+            print("Migration completed.")
     conn.close()
 
 def require_login(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if 'user_id' not in session:
+        if 'user_id' not in session and 'admin_logged_in' not in session:
             return jsonify({'error': 'Authentication required'}), 401
         return f(*args, **kwargs)
     return decorated_function
@@ -300,34 +250,56 @@ def require_login(f):
 def require_admin(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if 'user_id' not in session:
-            return jsonify({'error': 'Authentication required'}), 401
+        # Check simple admin login
+        if session.get('admin_logged_in'):
+            return f(*args, **kwargs)
         
-        # Check if user is admin
-        conn = sqlite3.connect('students.db')
-        cursor = conn.cursor()
-        cursor.execute("SELECT username FROM students WHERE id = ?", (session['user_id'],))
-        user = cursor.fetchone()
-        conn.close()
+        # Check database admin login
+        if 'user_id' in session:
+            conn = sqlite3.connect('students.db')
+            cursor = conn.cursor()
+            cursor.execute("SELECT username FROM students WHERE id = ?", (session['user_id'],))
+            user = cursor.fetchone()
+            conn.close()
+            if user and user[0] == 'admin':
+                return f(*args, **kwargs)
         
-        if not user or user[0] != 'admin':
-            return jsonify({'error': 'Admin access required'}), 403
-        
-        return f(*args, **kwargs)
+        return jsonify({'error': 'Admin access required'}), 403
     return decorated_function
+
+@app.route('/admin/login', methods=['GET', 'POST'])
+def admin_login():
+    if request.method == 'GET':
+        if session.get('admin_logged_in') or (session.get('user_id') and session.get('username') == 'admin'):
+            return redirect(url_for('admin_dashboard'))
+        return render_template('admin_login.html')
+    
+    username = request.form.get('username', '').strip()
+    password = request.form.get('password', '')
+    
+    if username == 'admin' and password == 'admin':
+        session['admin_logged_in'] = True
+        return redirect(url_for('admin_dashboard'))
+    
+    return render_template('admin_login.html', error='Invalid credentials'), 401
+
+@app.route('/admin/logout')
+def admin_logout():
+    session.pop('admin_logged_in', None)
+    return redirect(url_for('admin_login'))
+
+@app.route('/admin/dashboard')
+@require_admin
+def admin_dashboard():
+    return render_template('admin_dashboard.html')
 
 @app.before_request
 def security_check():
     ip = request.remote_addr
-    
-    # Check if IP is blocked
     if security_middleware.is_blocked(ip):
         return render_template('access_denied.html'), 403
     
-    # Check for SQL injection in request
     suspicious_data = []
-    
-    # Check JSON data
     if request.is_json:
         try:
             json_data = request.get_json()
@@ -338,17 +310,14 @@ def security_check():
         except:
             pass
     
-    # Check query parameters
     for key, value in request.args.items():
         if security_middleware.detect_sqli(str(value)):
             suspicious_data.append(f"query:{key}={value}")
     
-    # Check form data
     for key, value in request.form.items():
         if security_middleware.detect_sqli(str(value)):
             suspicious_data.append(f"form:{key}={value}")
     
-    # If suspicious activity detected
     if suspicious_data:
         reason = f"SQL injection attempt: {'; '.join(suspicious_data)}"
         security_middleware.block_ip(ip, reason)
@@ -363,11 +332,9 @@ def access_denied():
     return render_template('access_denied.html')
 
 @app.route('/login', methods=['POST'])
-@limiter.limit("5 per minute")  # Rate limit login attempts
+@limiter.limit("5 per minute")
 def login():
     ip = request.remote_addr
-    
-    # Check rate limiting
     if not security_middleware.check_rate_limit(ip):
         security_middleware.block_ip(ip, "Too many login attempts")
         return jsonify({'error': 'Too many attempts. IP blocked.'}), 429
@@ -379,19 +346,16 @@ def login():
     username = data.get('username', '').strip()
     password = data.get('password', '')
     
-    # Input validation
     if not username or not password:
         return jsonify({'error': 'Username and password required'}), 400
     
     if len(username) > 50 or len(password) > 128:
         return jsonify({'error': 'Invalid input length'}), 400
     
-    # Use parameterized query to prevent SQL injection
     conn = sqlite3.connect('students.db')
     cursor = conn.cursor()
     
     try:
-        # First check if user exists
         cursor.execute(
             "SELECT id, username, password_hash, name, email, major, gpa FROM students WHERE username = ?", 
             (username,)
@@ -399,12 +363,10 @@ def login():
         student = cursor.fetchone()
         
         if not student:
-            # User doesn't exist
             security_middleware.record_failed_attempt(ip)
             security_middleware.log_security_event(ip, "LOGIN_FAILED", f"Username not found: {username}")
             return jsonify({'error': 'Invalid credentials'}), 401
         
-        # Check if user is active
         try:
             cursor.execute("SELECT is_active FROM students WHERE id = ?", (student[0],))
             active_result = cursor.fetchone()
@@ -413,16 +375,13 @@ def login():
         except sqlite3.OperationalError:
             pass
         
-        # Verify password
         password_hash = student[2]
         if check_password_hash(password_hash, password):
-            # Successful login
             session['user_id'] = student[0]
             session['username'] = student[1]
             session.permanent = True
             app.permanent_session_lifetime = timedelta(hours=2)
             
-            # Update last login
             try:
                 cursor.execute(
                     "UPDATE students SET last_login = CURRENT_TIMESTAMP WHERE id = ?",
@@ -431,7 +390,6 @@ def login():
             except sqlite3.OperationalError:
                 pass
             
-            # Log successful login
             security_middleware.log_security_event(ip, "LOGIN_SUCCESS", f"User: {username}")
             
             student_data = {
@@ -444,7 +402,6 @@ def login():
             }
             return jsonify({'student': student_data})
         else:
-            # Failed login - wrong password
             security_middleware.record_failed_attempt(ip)
             security_middleware.log_security_event(ip, "LOGIN_FAILED", f"Wrong password for: {username}")
             return jsonify({'error': 'Invalid credentials'}), 401
@@ -468,14 +425,12 @@ def logout():
 def profile():
     conn = sqlite3.connect('students.db')
     cursor = conn.cursor()
-    
     try:
         cursor.execute(
             "SELECT username, name, email, major, gpa FROM students WHERE id = ?",
             (session['user_id'],)
         )
         student = cursor.fetchone()
-        
         if student:
             student_data = {
                 'username': student[0],
@@ -487,17 +442,11 @@ def profile():
             return render_template('profile.html', student=student_data)
         else:
             return jsonify({'error': 'User not found'}), 404
-            
     except sqlite3.Error as e:
         logging.error(f"Database error in profile: {e}")
         return jsonify({'error': 'Database error'}), 500
     finally:
         conn.close()
-
-@app.route('/admin/dashboard')
-@require_admin
-def admin_dashboard():
-    return render_template('admin_dashboard.html')
 
 @app.route('/admin/security-events')
 @require_admin
@@ -511,7 +460,6 @@ def view_security_events():
                         events.append(json.loads(line.strip()))
                     except json.JSONDecodeError:
                         continue
-        
         return jsonify({'events': events[-100:]})
     except Exception as e:
         logging.error(f"Error reading security events: {e}")
@@ -527,10 +475,8 @@ def view_blocked_ips():
 def unblock_ip():
     data = request.get_json()
     ip = data.get('ip')
-    
     if not ip:
         return jsonify({'error': 'IP address required'}), 400
-    
     if ip in security_middleware.blocked_ips:
         security_middleware.blocked_ips.remove(ip)
         security_middleware.save_blocked_ips()
@@ -543,7 +489,6 @@ def unblock_ip():
     else:
         return jsonify({'error': 'IP not found in blocked list'}), 404
 
-# Error handlers
 @app.errorhandler(429)
 def ratelimit_handler(e):
     return jsonify({'error': 'Rate limit exceeded'}), 429
@@ -559,7 +504,6 @@ def internal_error_handler(e):
 
 @app.route('/debug/reset-db')
 def reset_database():
-    """Development endpoint to reset database - remove in production"""
     if app.debug:
         try:
             if os.path.exists('students.db'):

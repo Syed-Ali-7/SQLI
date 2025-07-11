@@ -122,3 +122,14 @@
 {"timestamp": "2025-07-10T23:12:27.881506", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
 {"timestamp": "2025-07-10T23:12:56.381806", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
 {"timestamp": "2025-07-10T23:13:02.623707", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username= ' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; --"}
+{"timestamp": "2025-07-11T00:17:27.401510", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: john_doe"}
+{"timestamp": "2025-07-11T00:29:06.963423", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: john_doe"}
+{"timestamp": "2025-07-11T00:30:26.209476", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: john_doe"}
+{"timestamp": "2025-07-11T00:30:32.680230", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username= ' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; --"}
+{"timestamp": "2025-07-11T00:37:53.957720", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-11T00:37:57.372894", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-11T18:28:50.007487", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: john_doe"}
+{"timestamp": "2025-07-11T19:11:49.606802", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: john_doe"}
+{"timestamp": "2025-07-11T20:24:43.891469", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-11T20:26:18.602827", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
+{"timestamp": "2025-07-11T20:26:27.426965", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username= ' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; --"}
