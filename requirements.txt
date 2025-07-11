@@ -6,4 +6,4 @@ myenv\Scripts\activate
 
 Install the required packages using pip in myenv:
 pip install flask
-pip install flask_limiter
+pip install flask_limiterwaitress 

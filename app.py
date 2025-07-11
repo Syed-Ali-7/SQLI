@@ -11,6 +11,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 import smtplib
+from middleware import SQLI_PATTERNS
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 

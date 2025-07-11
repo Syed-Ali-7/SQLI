@@ -133,3 +133,13 @@
 {"timestamp": "2025-07-11T20:24:43.891469", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
 {"timestamp": "2025-07-11T20:26:18.602827", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: admin"}
 {"timestamp": "2025-07-11T20:26:27.426965", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username= ' UNION SELECT 'Table: ' || name || ' | Column: ' || sql,1,1,1,1,1,1 FROM sqlite_master WHERE type='table'; --"}
+{"timestamp": "2025-07-11T21:14:51.689424", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: john"}
+{"timestamp": "2025-07-11T21:14:53.923617", "ip": "127.0.0.1", "event_type": "LOGIN_FAILED", "details": "Username not found: john"}
+{"timestamp": "2025-07-11T21:16:01.148121", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: jane_smith"}
+{"timestamp": "2025-07-11T21:20:33.754029", "ip": "127.0.0.1", "event_type": "LOGOUT", "details": "User: jane_smith"}
+{"timestamp": "2025-07-11T21:21:53.854603", "ip": "127.0.0.1", "event_type": "LOGIN_SUCCESS", "details": "User: admin"}
+{"timestamp": "2025-07-11T21:32:38.837261", "ip": "127.0.0.1", "event_type": "IP_UNBLOCKED", "details": "Admin unblocked IP: 192.168.1.10"}
+{"timestamp": "2025-07-11T23:16:29.664791", "ip": "127.0.0.1", "event_type": "IP_UNBLOCKED", "details": "Admin unblocked IP: 192.168.1.30"}
+{"timestamp": "2025-07-11T23:20:48.110174", "ip": "127.0.0.1", "event_type": "IP_BLOCKED", "details": "SQL injection attempt: username=')) or benchmark(10000000,MD5(1))#"}
+{"timestamp": "2025-07-11T23:59:47.705876", "ip": "127.0.0.1", "event_type": "IP_UNBLOCKED", "details": "Admin unblocked IP: 10.0.0.5"}
+{"timestamp": "2025-07-11T23:59:58.233031", "ip": "127.0.0.1", "event_type": "IP_UNBLOCKED", "details": "Admin unblocked IP: 203.0.11.0"}

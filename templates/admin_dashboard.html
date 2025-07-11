@@ -9,7 +9,7 @@
       body {
         background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
       }
-      .measures-content{
+      .measures-content {
         background-color: var(--white-color);
         padding: 1rem;
         border-radius: 15px;
@@ -69,7 +69,7 @@
       .measure-card {
         background: #fff;
         border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         padding: 1.5rem;
         display: flex;
         align-items: center;
@@ -78,7 +78,7 @@
 
       .measure-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
       }
 
       .measure-icon {
@@ -95,10 +95,40 @@
         margin: 0;
         color: #666;
       }
+      .logout-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      #blocked-ips-content ol {
+        list-style: decimal;
+        padding-left: 2rem;
+      }
+      #blocked-ips-content li {
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+      }
+      .unblock-btn {
+        padding: 4px 10px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        float: right;
+      }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
+    <a href="/admin/logout" class="logout-btn">Logout</a>
     <h1>Admin SQL Injection Dashboard</h1>
     <div class="dashboard-section" style="grid-column: 1 / -1">
       <h2>SQL Injection Preventive Measures</h2>
@@ -108,42 +138,60 @@
             <div class="measure-icon">🛡️</div>
             <div class="measure-text">
               <h3>Parameterized Queries</h3>
-              <p>Use prepared statements to separate SQL code from user-provided data, preventing malicious injection.</p>
+              <p>
+                Use prepared statements to separate SQL code from user-provided
+                data, preventing malicious injection.
+              </p>
             </div>
           </div>
           <div class="measure-card">
             <div class="measure-icon">🔒</div>
             <div class="measure-text">
               <h3>Input Validation</h3>
-              <p>Strictly validate and sanitize all user inputs to ensure they conform to expected formats and values.</p>
+              <p>
+                Strictly validate and sanitize all user inputs to ensure they
+                conform to expected formats and values.
+              </p>
             </div>
           </div>
           <div class="measure-card">
             <div class="measure-icon">🔥</div>
             <div class="measure-text">
               <h3>Web Application Firewall (WAF)</h3>
-              <p>Deploy a WAF to filter and block malicious traffic, including common SQL injection patterns.</p>
+              <p>
+                Deploy a WAF to filter and block malicious traffic, including
+                common SQL injection patterns.
+              </p>
             </div>
           </div>
           <div class="measure-card">
             <div class="measure-icon">🔄</div>
             <div class="measure-text">
               <h3>Regular Updates</h3>
-              <p>Keep all database systems, libraries, and frameworks patched and up-to-date to protect against known vulnerabilities.</p>
+              <p>
+                Keep all database systems, libraries, and frameworks patched and
+                up-to-date to protect against known vulnerabilities.
+              </p>
             </div>
           </div>
           <div class="measure-card">
             <div class="measure-icon">🕵️</div>
             <div class="measure-text">
               <h3>Security Audits</h3>
-              <p>Conduct regular penetration testing and code reviews to proactively identify and fix security weaknesses.</p>
+              <p>
+                Conduct regular penetration testing and code reviews to
+                proactively identify and fix security weaknesses.
+              </p>
             </div>
           </div>
           <div class="measure-card">
             <div class="measure-icon">🎓</div>
             <div class="measure-text">
               <h3>Developer Training</h3>
-              <p>Educate developers on secure coding practices and the latest SQL injection threats and countermeasures.</p>
+              <p>
+                Educate developers on secure coding practices and the latest SQL
+                injection threats and countermeasures.
+              </p>
             </div>
           </div>
         </div>
@@ -172,10 +220,15 @@
           .then((data) => {
             const container = document.getElementById("blocked-ips-content");
             if (data.blocked_ips && data.blocked_ips.length > 0) {
-              const list = document.createElement("ul");
+              const list = document.createElement("ol");
               data.blocked_ips.forEach((ip) => {
                 const item = document.createElement("li");
                 item.textContent = ip;
+                const unblockBtn = document.createElement("button");
+                unblockBtn.textContent = "Unblock";
+                unblockBtn.className = "unblock-btn";
+                unblockBtn.onclick = () => unblockIp(ip, item);
+                item.appendChild(unblockBtn);
                 list.appendChild(item);
               });
               container.appendChild(list);
@@ -252,6 +305,32 @@
             }
           });
       });
+
+      function unblockIp(ip, listItem) {
+        if (!confirm(`Are you sure you want to unblock ${ip}?`)) {
+          return;
+        }
+        fetch("/admin/unblock-ip", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ ip: ip }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.message) {
+              alert(data.message);
+              listItem.remove();
+            } else {
+              alert("Error: " + (data.error || "Unknown error"));
+            }
+          })
+          .catch((err) => {
+            console.error("Unblock failed", err);
+            alert("An error occurred while unblocking the IP.");
+          });
+      }
     </script>
   </body>
 </html>
