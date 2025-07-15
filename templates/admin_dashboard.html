@@ -17,7 +17,7 @@
       }
 
       .dashboard-container {
-        width: 90%;
+        width: 100%;
         max-width: 1200px;
         margin: 2rem auto;
         padding: 2rem;
@@ -123,6 +123,7 @@
         cursor: pointer;
         font-size: 14px;
         float: right;
+        width: 70px;
       }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -214,6 +215,31 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        function unblockIp(ip, listItem) {
+          if (!confirm(`Are you sure you want to unblock ${ip}?`)) {
+            return;
+          }
+          fetch("/admin/unblock-ip", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ ip: ip }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.message) {
+                alert(data.message);
+                listItem.remove();
+              } else {
+                alert("Error: " + (data.error || "Unknown error"));
+              }
+            })
+            .catch((err) => {
+              console.error("Unblock failed", err);
+              alert("An error occurred while unblocking the IP.");
+            });
+        }
         // Fetch and display blocked IPs
         fetch("/admin/blocked-ips")
           .then((response) => response.json())
@@ -241,19 +267,17 @@
         fetch("/admin/security-events")
           .then((response) => response.json())
           .then((data) => {
-            const events = data.events || [];
-            const container = document.getElementById(
-              "security-events-content"
-            );
+            try {
+              const events = data.events || [];
+              const container = document.getElementById(
+                "security-events-content"
+              );
 
-            if (events.length > 0) {
-              const table = document.createElement("table");
-              table.innerHTML = `<thead><tr><th>Timestamp</th><th>IP</th><th>Event</th><th>Details</th></tr></thead>`;
-              const tbody = document.createElement("tbody");
-              events
-                .slice()
-                .reverse()
-                .forEach((event) => {
+              if (events.length > 0) {
+                const table = document.createElement("table");
+                table.innerHTML = `<thead><tr><th>Timestamp</th><th>IP</th><th>Event</th><th>Details</th></tr></thead>`;
+                const tbody = document.createElement("tbody");
+                events.forEach((event) => {
                   const row = document.createElement("tr");
                   row.innerHTML = `<td>${new Date(
                     event.timestamp
@@ -262,46 +286,53 @@
                   }</td><td>${event.details}</td>`;
                   tbody.appendChild(row);
                 });
-              table.appendChild(tbody);
-              container.appendChild(table);
+                table.appendChild(tbody);
+                container.appendChild(table);
 
-              // Process data for chart
-              const eventCounts = events.reduce((acc, event) => {
-                acc[event.event_type] = (acc[event.event_type] || 0) + 1;
-                return acc;
-              }, {});
+                // Process data for chart
+                const eventCounts = events.reduce((acc, event) => {
+                  acc[event.event_type] = (acc[event.event_type] || 0) + 1;
+                  return acc;
+                }, {});
 
-              const chartLabels = Object.keys(eventCounts);
-              const chartData = Object.values(eventCounts);
+                const chartLabels = Object.keys(eventCounts);
+                const chartData = Object.values(eventCounts);
 
-              // Create chart
-              const ctx = document
-                .getElementById("event-types-chart")
-                .getContext("2d");
-              new Chart(ctx, {
-                type: "bar",
-                data: {
-                  labels: chartLabels,
-                  datasets: [
-                    {
-                      label: "Number of Events",
-                      data: chartData,
-                      backgroundColor: "rgba(54, 162, 235, 0.6)",
-                      borderColor: "rgba(54, 162, 235, 1)",
-                      borderWidth: 1,
-                    },
-                  ],
-                },
-                options: {
-                  scales: {
-                    y: {
-                      beginAtZero: true,
+                // Create chart
+                const ctx = document
+                  .getElementById("event-types-chart")
+                  .getContext("2d");
+                new Chart(ctx, {
+                  type: "bar",
+                  data: {
+                    labels: chartLabels,
+                    datasets: [
+                      {
+                        label: "Number of Events",
+                        data: chartData,
+                        backgroundColor: "rgba(54, 162, 235, 0.6)",
+                        borderColor: "rgba(54, 162, 235, 1)",
+                        borderWidth: 1,
+                      },
+                    ],
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true,
+                      },
                     },
                   },
-                },
-              });
-            } else {
-              container.textContent = "No security events recorded.";
+                });
+              } else {
+                container.textContent = "No security events recorded.";
+              }
+            } catch (error) {
+              console.error("Error processing security events:", error);
+              const container = document.getElementById(
+                "security-events-content"
+              );
+              container.textContent = "Error displaying security events.";
             }
           });
       });
